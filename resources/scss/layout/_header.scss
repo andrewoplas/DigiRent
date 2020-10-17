@@ -1,0 +1,175 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+@import "../abstract/breakpoint";
+
+.layout-header {
+  width: 100%;
+  height: 108px;
+
+  .header-background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    @include media-breakpoint-down(xl) {
+      height: 100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  .header-logo-user {
+    @include flex($justify-content: space-between);
+    @include rem(padding, 10px 28px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    @include media-breakpoint-down(xl) {
+      top: 40px;
+      @include rem(padding, 10px 25px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include rem(padding, 10px 15px);
+    }
+
+    .logo {
+      @include rem(padding, 13px 22px);
+      @include rem(margin-top, 22px);
+      align-self: center;
+      border-radius: 10px;
+      background-color: $color-primary;
+
+      .text {
+        color: white;
+        @include clear-spacing;
+        @include font(40px, $fw-bold);
+      }
+    }
+
+    .user {
+      @include flex(center, center);
+      @include simple-shadow;
+      @include rem(margin-top, 10px);
+      background-color: white;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+    }
+
+    @include media-breakpoint-down(xl) {
+      .logo {
+        @include rem(padding, 10px 18px);
+
+        .text {
+          @include font(25px, $fw-bold);
+        }
+      }
+
+      .user {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        @include rem(margin-top, 18px);
+      }
+    }
+  }
+
+  .header-menu {
+    @include flex($justify-content: center);
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    .header-menu-wrapper {
+      @include flex();
+      @include rem(margin-left, -240px);
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+
+    .main-menu {
+      align-self: center;
+      background-color: $color-primary;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+      @include rem(padding, 10px 18px);
+      @include rem(padding-top, 15px);
+      @include simple-shadow;
+
+      a {
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        @include font($size: 15px);
+      }
+
+      span {
+        color: #3696ed;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        @include flex(center, center);
+
+        a {
+          @include font($size: 12px);
+        }
+      }
+    }
+
+    .note {
+      background-color: white;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+      @include rem(padding, 10px 27px);
+      @include rem(padding-top, 15px);
+      @include rem(margin-right, 126px);
+      @include simple-shadow;
+
+      span {
+        text-transform: uppercase;
+        color: $color-dark;
+        @include font($size: 15px);
+      }
+    }
+
+    @include media-breakpoint-down(xl) {
+      .note {
+        @include rem(margin-right, 50px);
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      .note {
+        display: none;
+      }
+
+      .header-menu-wrapper {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.header-back {
+  .back {
+    @include flex(center, center);
+    @include simple-shadow;
+    margin-top: 38px;
+    margin-left: 58px;
+    background-color: $color-primary;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 15px;
+    }
+  }
+}

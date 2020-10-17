@@ -1,0 +1,193 @@
+@import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./abstract/breakpoint";
+
+.layout-content {
+  padding-top: 7px;
+  padding-bottom: 500px;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 250px;
+  }
+
+  .title {
+    @include font(35px, $fw-light);
+    @include clear-spacing;
+    text-align: center;
+  }
+
+  .subtitle {
+    @include clear-spacing;
+    @include font(18px, $fw-light);
+    margin-top: 75px;
+    text-align: center;
+    color: $color-primary;
+  }
+
+  .description {
+    background-color: white;
+    @include simple-shadow;
+    border-radius: 10px;
+    max-width: 741px;
+    padding: 20px 25px;
+    @include font(18px, $fw-light);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    line-height: 25px;
+    color: $color-dark-gray;
+    text-align: center;
+  }
+
+  .list {
+    margin-top: 100px;
+
+    .item {
+      background-color: white;
+      padding: 25px 20px;
+      border-radius: 10px;
+      @include simple-shadow;
+      position: relative;
+      margin-bottom: 30px;
+      transition: 300ms;
+
+      .icon {
+        @include flex(center, center);
+        @include simple-shadow;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+      }
+
+      .desc-wrapper {
+        height: 140px;
+        @include flex(center, center);
+
+        span {
+          @include font(20px, $fw-light);
+          color: $color-dark-gray;
+          text-align: center;
+          line-height: 30px;
+        }
+      }
+
+      .icon-next {
+        cursor: pointer;
+        @include flex(center, center);
+        @include simple-shadow;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background-color: $color-primary;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+
+        &:hover {
+          opacity: 0.8;
+          transition: 300ms;
+        }
+      }
+    }
+  }
+}
+
+#faq-modal {
+  .modal-content {
+    overflow: hidden;
+  }
+
+  .modal-body {
+    padding: 0;
+    padding-bottom: 30px;
+    position: relative;
+
+    .modal-background {
+      transform: skew(0deg, -5deg);
+      height: 65px;
+      width: 100%;
+      position: absolute;
+      top: -22px;
+      left: 0;
+      background-color: $color-primary-lighter;
+    }
+
+    .main-content {
+      margin-top: -25px;
+      position: relative;
+      z-index: 2;
+
+      .icon {
+        @include flex(center, center);
+        @include simple-shadow;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      .title {
+        max-width: 180px;
+        display: block;
+        margin-top: 45px;
+        @include font(18px, 400);
+        color: $color-dark-gray;
+        text-align: center;
+        line-height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .description {
+        display: block;
+        margin-top: 8px;
+        @include font(18px, $fw-light);
+        color: #b8b8b8;
+        text-align: center;
+        line-height: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+    .back {
+      border: 0;
+      position: relative;
+      z-index: 3;
+      @include flex(center, center);
+      @include simple-shadow;
+      margin-top: 10px;
+      margin-left: 10px;
+      background-color: $color-primary;
+      height: 40px;
+      width: 40px;
+      padding: 5px;
+      border-radius: 50%;
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 15px;
+      }
+    }
+
+    .reaction {
+      @include flex(center, center);
+      margin-top: 40px;
+
+      img {
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+        &.icon-dislike {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

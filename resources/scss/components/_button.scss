@@ -1,0 +1,35 @@
+@import "../abstract/breakpoint";
+
+.button {
+  width: 200px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: white;
+  color: $color-blue !important;
+  @include flex(center, center);
+  @include font(1rem, $fw-medium);
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+
+  &.large {
+    width: 325px;
+    height: 60px;
+    @include font(1.25rem, $fw-medium);
+
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+
+  &.green {
+    color: white !important;
+    background-color: $color-green;
+  }
+
+  &.blue {
+    color: white !important;
+    background-color: $color-blue;
+  }
+}
