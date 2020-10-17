@@ -1,0 +1,27 @@
+{
+  "name": "DigiRent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "pscss": "prettier --write './resources/**/*.scss'",
+    "phtml": "prettier --write '*.html'",
+    "scss": "sass --watch --no-source-map resources/scss:resources/css",
+    "t": "npx tailwindcss build resources/css/styles.css -o resources/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewoplas/DigiRent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewoplas/DigiRent/issues"
+  },
+  "homepage": "https://github.com/andrewoplas/DigiRent#readme",
+  "devDependencies": {
+    "tailwindcss": "^1.9.3"
+  }
+}
