@@ -247,9 +247,13 @@
     border-radius: 0;
   }
 }
+@media (max-width: 575.98px) {
+  .layout-footer .subscriber {
+    padding: 50px 25px;
+  }
+}
 .layout-footer .subscriber .logo {
-  padding: 0.8125rem 1.375rem;
-  margin-top: 1.375rem;
+  padding: 13px 22px;
   display: inline-block;
   border-radius: 10px;
   background-color: #41a2f9;
