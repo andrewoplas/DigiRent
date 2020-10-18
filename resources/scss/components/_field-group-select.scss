@@ -7,7 +7,6 @@
   @include simple-shadow;
   padding: 10px 20px;
   border-radius: 20px;
-  z-index: 1;
   position: relative;
 
   &.active {
@@ -70,6 +69,7 @@
     align-self: flex-end;
     overflow: hidden;
     display: none;
+    z-index: 1;
 
     .item {
       @include font(16px, $fw-light);

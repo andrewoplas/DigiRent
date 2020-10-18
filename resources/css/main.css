@@ -794,7 +794,6 @@ textarea::placeholder {
   box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   padding: 10px 20px;
   border-radius: 20px;
-  z-index: 1;
   position: relative;
 }
 .field-group-select.active .choices {
@@ -854,6 +853,7 @@ textarea::placeholder {
   align-self: flex-end;
   overflow: hidden;
   display: none;
+  z-index: 1;
 }
 .field-group-select .choices .item {
   font-family: Proxima Nova, sans-serif;

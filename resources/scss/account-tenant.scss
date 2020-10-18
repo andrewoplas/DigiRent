@@ -40,6 +40,10 @@
           margin-left: -20px;
           margin-top: -40px;
 
+          @include media-breakpoint-down(md) {
+            margin-left: 10px;
+          }
+
           .item {
             height: 35px;
             width: 35px;

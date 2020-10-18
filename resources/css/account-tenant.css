@@ -40,6 +40,11 @@
   margin-left: -20px;
   margin-top: -40px;
 }
+@media (max-width: 991.98px) {
+  .layout-content .user-profile .top .photo-holder .settings {
+    margin-left: 10px;
+  }
+}
 .layout-content .user-profile .top .photo-holder .settings .item {
   height: 35px;
   width: 35px;
