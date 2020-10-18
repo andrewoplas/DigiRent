@@ -25,7 +25,7 @@
   .main-desc {
     @include font(18px, $fw-light);
     @include clear-spacing;
-    line-height: 25px;
+    line-height: 28px;
     color: $color-dark-gray;
   }
 }

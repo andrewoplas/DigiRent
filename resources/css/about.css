@@ -1,0 +1,57 @@
+.layout-content {
+  padding-top: 7px;
+  padding-bottom: 400px;
+}
+@media (max-width: 767.98px) {
+  .layout-content {
+    padding-bottom: 150px;
+  }
+}
+.layout-content .main-subtitle {
+  margin-top: 75px;
+  color: #41a2f9;
+}
+.layout-content .main-box {
+  margin-top: 25px;
+}
+.layout-content .about-us-item {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+}
+.layout-content .about-us-item .radio-button-icon {
+  flex-shrink: 0;
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  margin-right: 35px;
+}
+@media (max-width: 575.98px) {
+  .layout-content .about-us-item .radio-button-icon {
+    display: none;
+  }
+}
+.layout-content .help-build-the-future-wrapper {
+  margin-top: 200px;
+}
+.layout-content .help-build-the-future-wrapper .rounded-icon {
+  margin-top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.layout-content .help-build-the-future-wrapper .rounded-icon img {
+  width: 40px;
+  height: 40px;
+}
+.layout-content .help-build-the-future-wrapper .btn-view-all-vacancies {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767.98px) {
+  .layout-content .help-build-the-future-wrapper {
+    margin-top: 75px;
+  }
+}

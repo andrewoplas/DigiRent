@@ -1,0 +1,11 @@
+@import "../abstract/mixins";
+@import "../abstract/breakpoint";
+
+.rounded-icon {
+  @include flex(center, center);
+  @include simple-shadow;
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}

@@ -50,3 +50,12 @@ body {
   background-color: #fff;
   backdrop-filter: blur(10px);
 }
+
+button {
+  transition: 300ms;
+
+  &:hover {
+    transition: 300ms;
+    opacity: 0.8;
+  }
+}

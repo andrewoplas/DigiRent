@@ -203,11 +203,17 @@
   height: 46px;
   width: 46px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: 300ms;
 }
 @media (max-width: 767.98px) {
   .header-back .back {
     margin-left: 15px;
   }
+}
+.header-back .back:hover {
+  transition: 300ms;
+  opacity: 0.8;
 }
 
 .layout-content .main-title {
@@ -241,7 +247,7 @@
   line-height: 100%;
   padding: 0;
   margin: 0;
-  line-height: 25px;
+  line-height: 28px;
   color: #7f7f7f;
 }
 
@@ -484,4 +490,42 @@ body {
 .modal-backdrop {
   background-color: #fff;
   backdrop-filter: blur(10px);
+}
+
+button {
+  transition: 300ms;
+}
+button:hover {
+  transition: 300ms;
+  opacity: 0.8;
+}
+
+.rounded-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.button {
+  background-color: #41a2f9;
+  color: white;
+  border: 0;
+  padding: 12px 20px 10px 20px;
+  border-radius: 20px;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  display: inline-block;
+  transition: 300ms;
+}
+.button:hover {
+  transition: 300ms;
+  opacity: 0.8;
 }
