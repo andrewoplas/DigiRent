@@ -46,6 +46,7 @@
   height: 35px;
   width: 35px;
   padding: 6px;
+  position: relative;
   @include flex(center, center);
   cursor: pointer;
 

@@ -616,6 +616,7 @@ textarea::placeholder {
   height: 35px;
   width: 35px;
   padding: 6px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
