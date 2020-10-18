@@ -2,17 +2,81 @@
 @import "../abstract/variables";
 
 .button {
+  @include simple-shadow;
   background-color: $color-primary;
-  color: white;
+  color: white !important;
   border: 0;
   padding: 12px 20px 10px 20px;
   border-radius: 20px;
   @include font(16px, $fw-light);
   display: inline-block;
   transition: 300ms;
+  text-decoration: none !important;
+  cursor: pointer;
+
+  &.white {
+    background-color: white;
+  }
+
+  &.min-width {
+    min-width: 140px;
+  }
 
   &:hover {
     transition: 300ms;
     opacity: 0.8;
+  }
+}
+
+.button-nav {
+  @include simple-shadow;
+  border: 0;
+  border-radius: 50%;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  padding: 6px;
+  @include flex(center, center);
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+
+  &.s-40 {
+    height: 40px;
+    width: 40px;
+    padding: 9px;
+  }
+
+  &.primary {
+    background-color: $color-primary;
+  }
+}
+
+.button-nav {
+  @include simple-shadow;
+  position: relative;
+  border: 0;
+  border-radius: 50%;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  padding: 6px;
+  @include flex(center, center);
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+
+  &.s-40 {
+    height: 40px;
+    width: 40px;
+    padding: 9px;
+  }
+
+  &.primary {
+    background-color: $color-primary;
   }
 }

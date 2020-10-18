@@ -51,22 +51,10 @@
         }
       }
 
-      .icon-next {
-        cursor: pointer;
-        @include flex(center, center);
-        @include simple-shadow;
+      .button-nav {
         position: absolute;
         bottom: 15px;
         right: 15px;
-        background-color: $color-primary;
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-
-        &:hover {
-          opacity: 0.8;
-          transition: 300ms;
-        }
       }
     }
   }
@@ -97,18 +85,6 @@
       position: relative;
       z-index: 2;
 
-      .icon {
-        @include flex(center, center);
-        @include simple-shadow;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        z-index: -1;
-      }
-
       .title {
         max-width: 180px;
         display: block;
@@ -132,19 +108,11 @@
         padding-right: 25px;
       }
     }
-    .back {
-      border: 0;
-      position: relative;
+
+    .button-nav {
       z-index: 3;
-      @include flex(center, center);
-      @include simple-shadow;
       margin-top: 10px;
       margin-left: 10px;
-      background-color: $color-primary;
-      height: 40px;
-      width: 40px;
-      padding: 5px;
-      border-radius: 50%;
 
       @include media-breakpoint-down(sm) {
         margin-left: 15px;
