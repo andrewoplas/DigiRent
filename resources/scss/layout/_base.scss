@@ -12,11 +12,19 @@ body {
   min-width: 100%;
   overflow-x: hidden;
   position: relative;
-  color: #353535;
+  color: #3e3e3e;
 }
 
 .text-primary {
   color: $color-primary !important;
+}
+
+.text-dark-gray {
+  color: $color-dark-gray !important;
+}
+
+.text-md {
+  @include font(25px, 400);
 }
 
 .page-wrapper {

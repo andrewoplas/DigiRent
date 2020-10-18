@@ -2,19 +2,20 @@
 @import "../abstract/variables";
 
 .file-upload {
-  position: relative;
-  max-width: 70%;
+  @include flex(space-between, center);
 
   .file-select {
+    position: relative;
+    max-width: 70%;
     @include flex($align-items: center);
   }
 
-  button {
+  .btn-browse {
     background-color: white !important;
     color: $color-dark-gray !important;
   }
 
-  #noFile {
+  .filename {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

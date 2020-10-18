@@ -58,6 +58,10 @@
       height: 70px;
       width: 70px;
       border-radius: 50%;
+
+      img {
+        width: 70%;
+      }
     }
 
     @include media-breakpoint-down(xl) {
