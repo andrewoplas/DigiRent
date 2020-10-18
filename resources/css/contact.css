@@ -1,0 +1,60 @@
+.layout-content {
+  padding-top: 7px;
+  padding-bottom: 400px;
+}
+@media (max-width: 767.98px) {
+  .layout-content {
+    padding-bottom: 150px;
+  }
+}
+.layout-content .main-subtitle {
+  line-height: 30px;
+}
+.layout-content .main-box {
+  margin-top: 25px;
+}
+.layout-content .btn-visit-faq {
+  margin-top: 30px;
+}
+.layout-content .contacts {
+  margin-top: 100px;
+}
+.layout-content .contacts .item .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#contact-modal .modal-content {
+  overflow: hidden;
+}
+#contact-modal .modal-body {
+  padding: 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+#contact-modal .modal-body .modal-background {
+  transform: skew(0deg, -5deg);
+  height: 65px;
+  width: 100%;
+  position: absolute;
+  top: -22px;
+  left: 0;
+  background-color: #d3eaff;
+}
+#contact-modal .modal-body .main-content {
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+#contact-modal .modal-body .button-nav {
+  z-index: 3;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+@media (max-width: 767.98px) {
+  #contact-modal .modal-body .button-nav {
+    margin-left: 15px;
+  }
+}

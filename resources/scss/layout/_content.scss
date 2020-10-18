@@ -13,6 +13,14 @@
     @include clear-spacing;
     @include font(18px, $fw-light);
     text-align: center;
+
+    &.dark-gray {
+      color: $color-dark-gray;
+    }
+
+    &.primary {
+      color: $color-primary;
+    }
   }
 
   .main-box {

@@ -16,6 +16,12 @@
       "options": {
         "tabWidth": 2
       }
+    },
+    {
+      "files": ["*.svg"],
+      "options": {
+        "tabWidth": 2
+      }
     }
   ]
 }
