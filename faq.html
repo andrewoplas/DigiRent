@@ -59,12 +59,14 @@
                 <img src="./resources/images/main-left-bg.svg" class="left-arrow-bg" alt="left bg" />
                 <img src="./resources/images/main-right-bg.svg" class="right-arrow-bg" alt="left bg" />
                 <div class="container">
-                    <h3 class="title">FAQ</h3>
-                    <p class="subtitle">HOW DOES IT WORK?</p>
-                    <p class="description">
-                        We can imagine that we’ve missed something or you just want some better explanation. Please find more information below. We can always be reached by email or telephone if you
-                        can’t find your answer.
-                    </p>
+                    <h3 class="main-title">FAQ</h3>
+                    <p class="main-subtitle">HOW DOES IT WORK?</p>
+                    <div class="main-box">
+                        <p class="main-desc">
+                            We can imagine that we’ve missed something or you just want some better explanation. Please find more information below. We can always be reached by email or telephone if
+                            you can’t find your answer.
+                        </p>
+                    </div>
 
                     <div class="list row">
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
@@ -334,7 +336,7 @@
                 $(".icon-next").click(function () {
                     const item = $(this).parents(".item");
                     const imgSrc = item.find(".icon img").attr("src");
-                    const title = item.find(".desc-wrapper > span");
+                    const title = item.find(".desc-wrapper > span").clone();
 
                     const modal = $("#faq-modal");
                     modal.find(".main-content .title").html(title);

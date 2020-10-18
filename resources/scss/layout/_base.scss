@@ -1,0 +1,52 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+@import "../abstract/breakpoint";
+
+* {
+  font-family: $font-primary;
+  outline: none !important;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  color: #353535;
+}
+
+.text-primary {
+  color: $color-primary !important;
+}
+
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.left-arrow-bg {
+  position: absolute;
+  left: 0;
+  top: 720px;
+  z-index: -1;
+}
+
+.right-arrow-bg {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: -1;
+}
+
+.modal {
+  .modal-content {
+    @include simple-shadow;
+    border-radius: 10px;
+    border: 0;
+  }
+}
+
+.modal-backdrop {
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+}

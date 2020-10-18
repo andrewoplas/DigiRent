@@ -1,0 +1,31 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+@import "../abstract/breakpoint";
+
+.layout-content {
+  .main-title {
+    @include font(35px, $fw-light);
+    @include clear-spacing;
+    text-align: center;
+  }
+
+  .main-subtitle {
+    @include clear-spacing;
+    @include font(18px, $fw-light);
+    text-align: center;
+  }
+
+  .main-box {
+    @include simple-shadow;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px 25px;
+  }
+
+  .main-desc {
+    @include font(18px, $fw-light);
+    @include clear-spacing;
+    line-height: 25px;
+    color: $color-dark-gray;
+  }
+}

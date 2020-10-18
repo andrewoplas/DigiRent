@@ -7,42 +7,15 @@
     padding-bottom: 250px;
   }
 }
-.layout-content .title {
-  font-family: Proxima Nova, sans-serif;
-  font-weight: 300;
-  font-size: 35px;
-  line-height: 100%;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-.layout-content .subtitle {
-  padding: 0;
-  margin: 0;
-  font-family: Proxima Nova, sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 100%;
+.layout-content .main-subtitle {
   margin-top: 75px;
-  text-align: center;
   color: #41a2f9;
 }
-.layout-content .description {
-  background-color: white;
-  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
+.layout-content .main-box {
   max-width: 741px;
-  padding: 20px 25px;
-  font-family: Proxima Nova, sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
-  line-height: 25px;
-  color: #7f7f7f;
-  text-align: center;
 }
 .layout-content .list {
   margin-top: 100px;

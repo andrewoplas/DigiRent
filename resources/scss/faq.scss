@@ -10,33 +10,16 @@
     padding-bottom: 250px;
   }
 
-  .title {
-    @include font(35px, $fw-light);
-    @include clear-spacing;
-    text-align: center;
-  }
-
-  .subtitle {
-    @include clear-spacing;
-    @include font(18px, $fw-light);
+  .main-subtitle {
     margin-top: 75px;
-    text-align: center;
     color: $color-primary;
   }
 
-  .description {
-    background-color: white;
-    @include simple-shadow;
-    border-radius: 10px;
+  .main-box {
     max-width: 741px;
-    padding: 20px 25px;
-    @include font(18px, $fw-light);
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
-    line-height: 25px;
-    color: $color-dark-gray;
-    text-align: center;
   }
 
   .list {
