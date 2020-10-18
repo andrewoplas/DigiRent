@@ -167,9 +167,16 @@
     height: 46px;
     width: 46px;
     border-radius: 50%;
+    cursor: pointer;
+    transition: 300ms;
 
     @include media-breakpoint-down(sm) {
       margin-left: 15px;
+    }
+
+    &:hover {
+      transition: 300ms;
+      opacity: 0.8;
     }
   }
 }
