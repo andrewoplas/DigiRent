@@ -25,6 +25,12 @@ body {
 
 .text-md {
   @include font(25px, 400);
+  @include clear-spacing;
+}
+
+.text-sm {
+  @include font(16px, $fw-light);
+  @include clear-spacing;
 }
 
 .page-wrapper {
@@ -52,6 +58,17 @@ body {
     border-radius: 10px;
     border: 0;
   }
+
+  .modal-dialog {
+    &.modal-lg,
+    &.modal-xl {
+      @include media-breakpoint-down(lg) {
+        max-width: 100% !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+    }
+  }
 }
 
 .modal-backdrop {
@@ -64,7 +81,7 @@ button {
 
   &:hover {
     transition: 300ms;
-    opacity: 0.8;
+    filter: brightness(115%);
   }
 }
 

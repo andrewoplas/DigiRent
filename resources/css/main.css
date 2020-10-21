@@ -84,6 +84,7 @@
   background-color: white;
   height: 70px;
   width: 70px;
+  padding: 10px;
   border-radius: 50%;
 }
 .layout-header .header-logo-user .user img {
@@ -223,6 +224,15 @@
   font-family: Proxima Nova, sans-serif;
   font-weight: 300;
   font-size: 35px;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.layout-content .main-title-2 {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 25px;
   line-height: 100%;
   padding: 0;
   margin: 0;
@@ -480,6 +490,17 @@ body {
   font-weight: 400;
   font-size: 25px;
   line-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.text-sm {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .page-wrapper {
@@ -506,6 +527,13 @@ body {
   border-radius: 10px;
   border: 0;
 }
+@media (max-width: 1199.98px) {
+  .modal .modal-dialog.modal-lg, .modal .modal-dialog.modal-xl {
+    max-width: 100% !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
 
 .modal-backdrop {
   background-color: #fff;
@@ -517,7 +545,7 @@ button {
 }
 button:hover {
   transition: 300ms;
-  opacity: 0.8;
+  filter: brightness(115%);
 }
 
 .block-center {
@@ -569,6 +597,9 @@ textarea::placeholder {
   width: 70px;
   border-radius: 50%;
 }
+.rounded-icon.primary {
+  background-color: #41a2f9;
+}
 .rounded-icon img {
   width: 45%;
 }
@@ -585,7 +616,6 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 100%;
   display: inline-block;
-  transition: 300ms;
   text-decoration: none !important;
   cursor: pointer;
 }
@@ -602,10 +632,6 @@ textarea::placeholder {
 }
 .button.min-width {
   min-width: 140px;
-}
-.button:hover {
-  transition: 300ms;
-  opacity: 0.8;
 }
 
 .button-nav {
