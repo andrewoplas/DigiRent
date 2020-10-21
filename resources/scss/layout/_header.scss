@@ -58,10 +58,9 @@
       height: 70px;
       width: 70px;
       border-radius: 50%;
-
-      img {
-        width: 70%;
-      }
+      background-image: url("../../resources/images/landlord-sample-photo.jpg");
+      background-size: cover;
+      background-position: center;
     }
 
     @include media-breakpoint-down(xl) {
@@ -173,6 +172,10 @@
     border-radius: 50%;
     cursor: pointer;
     transition: 300ms;
+
+    img {
+      width: 50%;
+    }
 
     @include media-breakpoint-down(sm) {
       margin-left: 15px;
