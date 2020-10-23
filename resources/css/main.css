@@ -86,9 +86,9 @@
   width: 70px;
   padding: 10px;
   border-radius: 50%;
-}
-.layout-header .header-logo-user .user img {
-  width: 70%;
+  background-image: url("../../resources/images/landlord-sample-photo.jpg");
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 1599.98px) {
   .layout-header .header-logo-user .logo {
@@ -209,6 +209,9 @@
   border-radius: 50%;
   cursor: pointer;
   transition: 300ms;
+}
+.header-back .back img {
+  width: 50%;
 }
 @media (max-width: 767.98px) {
   .header-back .back {
