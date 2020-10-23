@@ -19,6 +19,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-left: 8px;
   }
 
   input[type="file"] {
@@ -31,5 +32,28 @@
     left: 0;
     opacity: 0;
     filter: alpha(opacity=0);
+  }
+
+  @include media-breakpoint-down(xs) {
+    &.responsive {
+      flex-wrap: wrap;
+
+      .file-select {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        max-width: 100%;
+
+        .filename {
+          margin-left: 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .button {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
   }
 }

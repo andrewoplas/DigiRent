@@ -295,7 +295,7 @@
                                     </div>
                                 </div>
 
-                                <hr />
+                                <hr class="mt-5 mb-5" />
 
                                 <div class="document-files">
                                     <div class="file-item">
@@ -309,36 +309,45 @@
                                     </div>
                                 </div>
 
-                                <div class="document-upload d-none">
+                                <div class="document-upload mt-5">
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
-                                            <span>Upload Document</span>
-                                            <div class="field-group-select select">
-                                                <img src="./resources/images/icon/icon-gender-primary.svg" class="left-icon" />
-                                                <span class="divider"></span>
-                                                <span class="value">Type document</span>
-                                                <button class="btn-dropdown">
-                                                    <img src="./resources/images/icon/icon-arrow-down-white.svg" alt="item icon" />
-                                                </button>
-                                                <div class="choices">
-                                                    <div class="item">Type 1</div>
-                                                    <div class="item">Type 2</div>
-                                                    <div class="item">Type 3</div>
-                                                    <div class="item">Type 4</div>
+                                            <div class="d-flex align-items-center left">
+                                                <span class="text-primary mr-4">Upload Document</span>
+                                                <div class="field-group-select select">
+                                                    <span class="value">Type document</span>
+                                                    <button class="btn-dropdown">
+                                                        <img src="./resources/images/icon/icon-arrow-down-white.svg" alt="item icon" />
+                                                    </button>
+                                                    <div class="choices">
+                                                        <div class="item">Type 1</div>
+                                                        <div class="item">Type 2</div>
+                                                        <div class="item">Type 3</div>
+                                                        <div class="item">Type 4</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="file-upload">
+                                        <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                                            <div class="file-upload responsive">
                                                 <div class="file-select">
-                                                    <button class="button btn-browse" id="fileName">Browse...</button>
-                                                    <div class="main-description font-weight-light ml-3 text-primary filename">No document selected</div>
+                                                    <button class="button btn-browse">Browse...</button>
+                                                    <div class="main-description font-weight-light text-primary filename">No document selected</div>
                                                     <input type="file" />
                                                 </div>
                                                 <button class="button">UPLOAD</button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+
+                                <div class="pagination">
+                                    <button class="btn-arrow prev">
+                                        <img src="./resources/images/icon/icon-arrow-left-white.svg" alt="item icon" />
+                                    </button>
+                                    <button class="btn-arrow next">
+                                        <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -434,6 +443,9 @@
         <!-- Required JS -->
         <script src="./resources/vendors/jquery/jquery.min.js"></script>
         <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Main JS -->
+        <script src="./resources/js/main.js"></script>
 
         <script>
             $(function () {

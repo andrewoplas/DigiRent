@@ -777,6 +777,7 @@ textarea::placeholder {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: 8px;
 }
 .file-upload input[type=file] {
   z-index: 100;
@@ -788,6 +789,25 @@ textarea::placeholder {
   left: 0;
   opacity: 0;
   filter: alpha(opacity=0);
+}
+@media (max-width: 575.98px) {
+  .file-upload.responsive {
+    flex-wrap: wrap;
+  }
+  .file-upload.responsive .file-select {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .file-upload.responsive .file-select .filename {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .file-upload.responsive .button {
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 
 .progress {
