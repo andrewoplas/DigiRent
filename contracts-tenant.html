@@ -10,7 +10,7 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./resources/css/main.css" />
-        <link rel="stylesheet" href="./resources/css/contracts-landlord.css" />
+        <link rel="stylesheet" href="./resources/css/contracts-tenant.css" />
     </head>
 
     <body>
@@ -58,51 +58,6 @@
                 <img src="./resources/images/main-right-bg.svg" class="right-arrow-bg" alt="left bg" />
                 <div class="container">
                     <h3 class="main-title">CONTRACTS</h3>
-
-                    <p class="main-title-2 pt-5 mt-5">MOVE IN <span class="font-weight-bold text-primary">PROCESS</span></p>
-                    <p class="main-desc font-weight-bold text-dark-gray text-center mt-4">SELECT THE MOVE IN SCENARIO</p>
-                    <p class="main-desc text-center">Move in your tenant to the property and start collecting rent</p>
-
-                    <div class="row process-list">
-                        <div class="col-12 col-md-6 col-lg-4 d-flex">
-                            <div class="main-box item">
-                                <div class="selector">
-                                    <img src="./resources/images/icon/icon-check-white.svg" />
-                                </div>
-                                <div class="rounded-icon primary mx-auto">
-                                    <img src="./resources/images/icon/icon-send-to-sign-agreement-white.svg" alt="item icon" />
-                                </div>
-                                <p class="main-desc text-center font-weight-bold text-dark">Send to sign agreement</p>
-                                <p class="main-desc text-center mt-3">Build the lease agreements with available templates or add your own template, customize, and have tenants sign it online.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 d-flex">
-                            <div class="main-box item align-self-stretch active">
-                                <div class="selector">
-                                    <img src="./resources/images/icon/icon-check-white.svg" />
-                                </div>
-                                <div class="rounded-icon primary mx-auto">
-                                    <img src="./resources/images/icon/icon-attach-signed-agreement-white.svg" alt="item icon" />
-                                </div>
-                                <p class="main-desc text-center font-weight-bold text-dark">Attach signed agreement</p>
-                                <p class="main-desc text-center mt-3">If you already have tenants with signed agreements, upload the files and complete the move-in process.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 d-flex">
-                            <div class="main-box item">
-                                <div class="selector">
-                                    <img src="./resources/images/icon/icon-check-white.svg" />
-                                </div>
-                                <div class="rounded-icon primary mx-auto">
-                                    <img src="./resources/images/icon/icon-no-need-for-an-aggrement-white.svg" alt="item icon" />
-                                </div>
-                                <p class="main-desc text-center font-weight-bold text-dark">No need for an agreement</p>
-                                <p class="main-desc text-center mt-3">I got this all arranged externally. And not in need of documenting here.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="button d-block mx-auto mt-5">GET STARTED</button>
 
                     <div class="row houses">
                         <div class="col-12 col-md-6 col-lg-4">
@@ -222,79 +177,6 @@
                             </button>
 
                             <div class="main-content pb-4">
-                                <div class="document-item">
-                                    <button class="btn-delete" data-toggle="modal" data-target="#confirmation-modal">
-                                        <img src="./resources/images/icon/icon-cancel-dark-gray.svg" />
-                                    </button>
-
-                                    <div class="document-photo"></div>
-
-                                    <div class="document-name flex-1 text-center">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <span class="text-sm font-weight-bold">Tony</span>
-                                            <span class="text-sm">, 22</span>
-                                            <img class="ml-2" src="./resources/images/icon/icon-camera-primary.svg" height="15" width="15" />
-                                        </div>
-                                        <p class="d-block text-sm text-primary m-0">STUDENT</p>
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="view-documents flex-1">
-                                        <div class="documents-status d-none">
-                                            <div class="item d-flex align-items-center justify-content-between">
-                                                <span class="normal-text font-weight-bold">Copy ID</span>
-                                                <span class="circular-icon check">
-                                                    <img src="./resources/images/icon/icon-check-white.svg" />
-                                                </span>
-                                                <div class="view-single-document">
-                                                    <img src="./resources/images/icon/icon-view-white.svg" />
-                                                </div>
-                                            </div>
-                                            <div class="item d-flex align-items-center justify-content-between mt-2">
-                                                <span class="normal-text font-weight-bold">Proof of Income</span>
-                                                <span class="circular-icon check">
-                                                    <img src="./resources/images/icon/icon-check-white.svg" />
-                                                </span>
-                                                <div class="view-single-document">
-                                                    <img src="./resources/images/icon/icon-view-white.svg" />
-                                                </div>
-                                            </div>
-                                            <div class="item d-flex align-items-center justify-content-between mt-2">
-                                                <span class="normal-text font-weight-bold">Proof of Enrolment</span>
-                                                <span class="circular-icon x">
-                                                    <img src="./resources/images/icon/icon-cancel-dark-gray.svg" />
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <button class="button btn-email mx-auto close-icon">
-                                            <img class="open-icon" src="./resources/images/icon/icon-cancel-primary.svg" />
-                                        </button>
-                                        <button class="button d-block d-sm-none d-md-block mx-auto">
-                                            <span class="open-icon">VIEW DOCUMENT</span>
-                                        </button>
-                                        <button class="button btn-email d-none d-sm-block d-md-none mx-auto">
-                                            <img class="open-icon" src="./resources/images/icon/icon-view-primary.svg" />
-                                        </button>
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="flex-1">
-                                        <span class="verified text-sm">VERIFIED</span>
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="flex-1">
-                                        <button class="button btn-email d-block mx-auto">
-                                            <img src="./resources/images/icon/icon-email-outline.svg" />
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <hr class="mt-5 mb-5" />
-
                                 <div class="document-files">
                                     <div class="file-item">
                                         <span class="normal-text font-weight-bold">Contract</span>
@@ -356,26 +238,6 @@
                                     <button class="btn-arrow next">
                                         <img src="./resources/images/icon/icon-caret-right-white.svg" />
                                     </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" tabindex="-1" role="dialog" id="confirmation-modal">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="modal-background"></div>
-
-                            <div class="main-content">
-                                <span class="title font-weight-light">ARE YOU SURE YOU WANT TO</span>
-                                <span class="title text-primary font-weight-bold">DELETE THE TENANT FROM THIS PROPERTY?</span>
-
-                                <div class="d-flex align-items-center justify-content-center mt-4">
-                                    <button class="button min-width mr-3" data-dismiss="modal">YES</button>
-                                    <button class="button gray2 min-width" data-dismiss="modal">NO</button>
                                 </div>
                             </div>
                         </div>
