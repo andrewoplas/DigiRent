@@ -1,0 +1,496 @@
+@import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./abstract/breakpoint";
+
+.layout-content {
+  padding-top: 7px;
+  padding-bottom: 400px;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 150px;
+  }
+
+  .main-box {
+    margin-top: 25px;
+  }
+
+  .process-list {
+    margin-top: 20px;
+
+    & > div {
+      margin-top: 80px;
+    }
+
+    .item {
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 20px;
+
+      &.active {
+        border: 1px solid $color-primary;
+
+        .selector {
+          background-color: $color-primary;
+
+          img {
+            display: block;
+          }
+        }
+      }
+
+      .rounded-icon {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+      }
+
+      .selector {
+        background-color: $color-gray;
+        height: 38px;
+        width: 34px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        position: absolute;
+        top: -38px;
+        right: 10px;
+        cursor: pointer;
+        @include flex(center, center);
+
+        &.active {
+          background-color: $color-primary;
+
+          img {
+            display: block;
+          }
+        }
+
+        img {
+          display: none;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .houses {
+    margin-top: 100px;
+
+    .item {
+      margin-left: 20px;
+      margin-right: 20px;
+
+      @include media-breakpoint-down(md) {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
+
+      .house-bg {
+        height: 300px;
+        width: 100%;
+        background-image: url("../../resources/images/house-sample.jpg");
+        background-position: center;
+        background-size: cover;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        position: relative;
+
+        .monthly-payment {
+          width: 72px;
+          background-color: $color-primary;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          top: 60px;
+          right: -36px;
+          border-radius: $border-radius;
+          padding: 15px 20px 10px 20px;
+          @include simple-shadow;
+
+          .dash {
+            line-height: 0px !important;
+            margin-top: -2px !important;
+            margin-bottom: -2px !important;
+            opacity: 0.5;
+          }
+
+          .icon-wrapper {
+            position: absolute;
+            top: -20px;
+            height: 30px;
+            width: 30px;
+            background-color: $color-primary;
+            border-radius: 50%;
+            @include flex(center, center);
+
+            img {
+              width: 50%;
+            }
+          }
+        }
+
+        .rooms-toilet {
+          width: 72px;
+          background-color: white;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          top: 150px;
+          right: -36px;
+          border-radius: $border-radius;
+          padding: 15px 18px 10px 18px;
+          @include simple-shadow;
+
+          .main-desc {
+            line-height: 100% !important;
+            margin-top: 1px;
+          }
+        }
+
+        .not-selected {
+          background-color: #aeaeae;
+          position: absolute;
+          right: 0;
+          top: 240px;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          text-align: center;
+          color: white;
+          font-size: 12px;
+          line-height: 100%;
+          padding: 3px 8px;
+        }
+
+        @include breakpoint-down(610px) {
+          .monthly-payment,
+          .rooms-toilet {
+            right: 10px;
+          }
+        }
+
+        .button {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          bottom: -18px;
+        }
+      }
+    }
+  }
+}
+
+#signed-document-modal {
+  .main-content {
+    margin-top: 30px;
+
+    .divider {
+      width: 1px;
+      height: 40px;
+      background-color: black;
+      opacity: 0.05;
+      display: block;
+    }
+
+    .document-item {
+      margin-left: 30px;
+      margin-right: 30px;
+      @include simple-shadow;
+      border-radius: $border-radius;
+      position: relative;
+      @include flex(stretch, center);
+
+      .view-documents {
+        position: relative;
+        .button {
+          background-color: white;
+          border: 1px solid $color-primary;
+          color: $color-primary !important;
+        }
+
+        .close-icon {
+          display: none;
+        }
+
+        .documents-status {
+          position: relative;
+          width: 225px;
+          background-color: white;
+          border-radius: $border-radius;
+          @include simple-shadow;
+          padding: 8px 14px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          bottom: 60px;
+
+          // .item {
+          //   position: relative;
+          // }
+
+          .circular-icon {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            @include flex(center, center);
+
+            &.check {
+              background-color: $color-green;
+            }
+
+            &.x {
+              background-color: $color-gray;
+            }
+
+            img {
+              width: 45%;
+            }
+          }
+
+          .view-single-document {
+            background-color: $color-primary;
+            position: absolute;
+            width: 33px;
+            height: 22px;
+            right: -33px;
+            @include flex(center, center);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            img {
+              width: 40%;
+            }
+          }
+        }
+      }
+
+      .flex-1 {
+        flex: 1;
+        text-align: center;
+      }
+
+      .btn-delete {
+        position: absolute;
+        border: 0;
+        height: 25px;
+        width: 25px;
+        padding: 0;
+        @include flex(center, center);
+        @include simple-shadow;
+        border-radius: 50%;
+        right: -8px;
+        top: -12px;
+
+        img {
+          width: 40%;
+        }
+      }
+
+      .document-photo {
+        height: 80px;
+        width: 150px;
+        background-image: url("../../resources/images/student-sample-photo.jpg");
+        background-size: cover;
+        background-position: center;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        flex-shrink: 0;
+      }
+
+      .verified {
+        color: white;
+        padding: 7px 16px;
+        background-color: $color-green;
+        border-radius: 18px;
+      }
+
+      .btn-email {
+        height: 38px;
+        width: 38px;
+        padding: 0;
+        @include flex(center, center);
+
+        img {
+          width: 50%;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        padding: 15px 0;
+
+        .document-photo {
+          display: none;
+        }
+
+        .view-documents {
+          flex: 1.5;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        .divider {
+          display: none;
+        }
+
+        .view-documents {
+          flex: 1;
+        }
+      }
+
+      @include breakpoint-down(650px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      @include media-breakpoint-down(xs) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .flex-1 {
+          flex: 0;
+        }
+
+        .document-name {
+          flex-basis: 100%;
+          margin-bottom: 5px;
+        }
+
+        .btn-email {
+          margin-left: 10px !important;
+        }
+
+        .view-documents {
+          order: 4;
+          flex-basis: 100%;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .document-files {
+      margin-left: 30px;
+      margin-right: 30px;
+      @include simple-shadow;
+      border-radius: $border-radius;
+      position: relative;
+      @include flex(stretch, center);
+      padding: 20px 20px;
+
+      .file-item {
+        flex: 1;
+        text-align: center;
+
+        button {
+          background-color: white;
+          border: 1px solid $color-primary;
+          color: $color-primary !important;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        .file-item {
+          @include flex(space-between, center);
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        flex-wrap: wrap;
+
+        .divider {
+          display: none;
+        }
+
+        .file-item {
+          margin: 8px 0;
+          flex-basis: 100%;
+          @include flex(space-between, center);
+        }
+      }
+
+      @include breakpoint-down(650px) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+
+      @include media-breakpoint-down(xs) {
+        .file-item {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .document-upload {
+      margin-left: 30px;
+      margin-right: 30px;
+
+      .left {
+        .field-group-select {
+          flex: 1;
+        }
+
+        @include media-breakpoint-down(xs) {
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .field-group-select {
+            flex-basis: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#confirmation-modal {
+  .modal-content {
+    overflow: hidden;
+  }
+
+  .modal-body {
+    padding: 0;
+    padding-bottom: 30px;
+    position: relative;
+
+    .modal-background {
+      transform: skew(0deg, -5deg);
+      height: 65px;
+      width: 100%;
+      position: absolute;
+      top: -22px;
+      left: 0;
+      background-color: $color-primary-lighter;
+    }
+
+    .main-content {
+      padding: 70px 25px 30px 25px;
+      position: relative;
+      z-index: 2;
+
+      .title {
+        display: block;
+        @include font(18px, 400);
+        color: $color-dark-gray;
+        text-align: center;
+        line-height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

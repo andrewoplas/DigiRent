@@ -9,6 +9,10 @@
   width: 70px;
   border-radius: 50%;
 
+  &.primary {
+    background-color: $color-primary;
+  }
+
   img {
     width: 45%;
   }
