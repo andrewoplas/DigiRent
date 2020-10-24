@@ -125,3 +125,39 @@
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */
 }
+.layout-content .popup-cookies-overlay {
+  position: fixed;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.layout-content .popup-cookies-overlay .main-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.layout-content .popup-cookies-overlay .main-box .button {
+  flex-shrink: 0;
+}
+.layout-content .popup-cookies-overlay .main-box .divider {
+  width: 1px;
+  height: 60px;
+  background-color: black;
+  opacity: 0.05;
+  display: block;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+@media (max-width: 767.98px) {
+  .layout-content .popup-cookies-overlay .main-box {
+    display: block;
+  }
+  .layout-content .popup-cookies-overlay .main-box .button {
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

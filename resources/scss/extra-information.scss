@@ -126,4 +126,41 @@
       }
     }
   }
+
+  .popup-cookies-overlay {
+    position: fixed;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    .main-box {
+      @include flex(center, center);
+
+      .button {
+        flex-shrink: 0;
+      }
+
+      .divider {
+        width: 1px;
+        height: 60px;
+        background-color: black;
+        opacity: 0.05;
+        display: block;
+        margin-left: 18px;
+        margin-right: 18px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        display: block;
+
+        .button {
+          margin-top: 15px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
 }
