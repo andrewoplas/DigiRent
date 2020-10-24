@@ -1,0 +1,42 @@
+.layout-content {
+  padding-top: 7px;
+  padding-bottom: 400px;
+}
+@media (max-width: 767.98px) {
+  .layout-content {
+    padding-bottom: 150px;
+  }
+}
+.layout-content .information {
+  margin-top: 80px;
+}
+.layout-content .information .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+}
+.layout-content .information .item .main-box {
+  margin-left: 50px;
+  padding-left: 40px;
+}
+.layout-content .information .item .rounded-icon {
+  position: absolute;
+  border-radius: 10px;
+}
+@media (max-width: 575.98px) {
+  .layout-content .information .item .main-box {
+    margin-left: 0;
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-left: 25px;
+  }
+  .layout-content .information .item .rounded-icon {
+    top: 20px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
