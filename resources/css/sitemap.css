@@ -1,0 +1,26 @@
+.layout-content {
+  padding-top: 7px;
+  padding-bottom: 400px;
+}
+@media (max-width: 767.98px) {
+  .layout-content {
+    padding-bottom: 150px;
+  }
+}
+.layout-content .sitemaps {
+  margin-top: 100px;
+}
+.layout-content .sitemaps a {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: #7f7f7f;
+  display: block;
+  padding: 8px 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+}
+.layout-content .sitemaps a:nth-child(odd) {
+  background-color: #f1f9ff;
+}

@@ -263,31 +263,5 @@
         <!-- Required JS -->
         <script src="./resources/vendors/jquery/jquery.min.js"></script>
         <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-        <script>
-            $(function () {
-                $(".icon-next").click(function () {
-                    const item = $(this).parents(".item");
-                    const imgSrc = item.find(".icon img").attr("src");
-                    const title = item.find(".desc-wrapper > span").clone();
-
-                    const modal = $("#faq-modal");
-                    modal.find(".main-content .title").html(title);
-                    modal.find(".main-content .icon img").attr("src", imgSrc);
-                    modal.modal("show");
-                });
-
-                let dislike = "./resources/images/icon/icon-dislike.svg";
-                let dislikeActive = "./resources/images/icon/icon-dislike-active.svg";
-                let like = "./resources/images/icon/icon-like.svg";
-                let likeActive = "./resources/images/icon/icon-like-active.svg";
-
-                $(".reaction img").click(function () {
-                    $(".reaction img.icon-dislike").attr("src", dislike);
-                    $(".reaction img.icon-like").attr("src", like);
-                    $(this).attr("src", $(this).data("type") === "like" ? likeActive : dislikeActive);
-                });
-            });
-        </script>
     </body>
 </html>
