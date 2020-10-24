@@ -4,10 +4,14 @@
 
 .layout-content {
   padding-top: 7px;
-  padding-bottom: 500px;
+  padding-bottom: 400px;
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 250px;
+  }
 
   @include media-breakpoint-down(sm) {
-    padding-bottom: 250px;
+    padding-bottom: 150px;
   }
 
   .main-subtitle {
