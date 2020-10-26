@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Digi Rent - Login</title>
+        <title>Digi Rent - Register</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Required CSS -->
@@ -10,7 +10,7 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./resources/css/main.css" />
-        <link rel="stylesheet" href="./resources/css/login.css" />
+        <link rel="stylesheet" href="./resources/css/register.css" />
     </head>
 
     <body>
@@ -57,17 +57,17 @@
                 <img src="./resources/images/main-left-bg.svg" class="left-arrow-bg" alt="left bg" />
                 <img src="./resources/images/main-right-bg.svg" class="right-arrow-bg" alt="left bg" />
                 <div class="container">
-                    <h3 class="main-title">LOGIN</h3>
+                    <h3 class="main-title">REGISTER</h3>
                     <p class="main-desc text-center mt-4">
-                        We'll start creating the parts of the homepage first which includes login dialog. In the meantime, since we don't have the homepage yet, we'll just temporarily use this page to
-                        display login dialog.
+                        We'll start creating the parts of the homepage first which includes register dialog. In the meantime, since we don't have the homepage yet, we'll just temporarily use this page
+                        to display register dialog.
                     </p>
 
-                    <button class="button min-width mr-3 d-block mx-auto mt-5" data-toggle="modal" data-target="#login-modal">View Login</button>
+                    <button class="button min-width mr-3 d-block mx-auto mt-5" data-toggle="modal" data-target="#register-modal">View Register</button>
                 </div>
             </section>
 
-            <div class="modal fade" tabindex="-1" role="dialog" id="login-modal">
+            <div class="modal fade" tabindex="-1" role="dialog" id="register-modal">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -80,41 +80,102 @@
                                 <div class="toggle-icon landlord-icon"></div>
                             </div>
 
-                            <p class="title">LOGIN</p>
+                            <p class="title">REGISTER</p>
 
                             <div class="button-toggler mt-2 d-flex">
                                 <button class="button min-width btn-as-tenant active">AS TENANT</button>
                                 <button class="button min-width btn-as-landlord">AS LANDLORD</button>
                             </div>
 
+                            <div class="social-media-options">
+                                <div class="item mr-3">
+                                    <img src="./resources/images/social-media/facebook-square.png" />
+                                </div>
+                                <div class="item">
+                                    <img src="./resources/images/social-media/google.png" />
+                                </div>
+                            </div>
+
                             <div class="main-content mt-4">
-                                <div class="field-group">
-                                    <input type="email" placeholder="Email Address" required />
-                                </div>
-                                <div class="field-group mt-3">
-                                    <input type="password" placeholder="Password" required />
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-between form-footer mt-3">
-                                    <div class="d-flex align-items-center checkbox-container">
-                                        <span class="rounded-icon checkbox">
-                                            <img src="./resources/images/icon/icon-check-primary.svg" />
-                                        </span>
-                                        <span class="ml-3 remember-me-text">Remember me</span>
-                                    </div>
-                                    <a href="#" class="forgot-password text-primary">Forgot password?</a>
-                                </div>
-
-                                <div class="login-button mt-3">
-                                    <div class="social-media-options">
-                                        <div class="item mr-3">
-                                            <img src="./resources/images/social-media/facebook-square.png" />
+                                <div class="tenant-fields fields-container active">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="field-group">
+                                                <input type="text" placeholder="First Name" required />
+                                            </div>
                                         </div>
-                                        <div class="item">
-                                            <img src="./resources/images/social-media/google.png" />
+                                        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                                            <div class="field-group">
+                                                <input type="text" placeholder="Last Name" required />
+                                            </div>
                                         </div>
                                     </div>
-                                    <button class="button btn-login min-width">LOGIN</button>
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="field-group">
+                                                <input type="text" placeholder="Date of Birth" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                                            <div class="field-group">
+                                                <input type="text" placeholder="Mobile Number" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field-group mt-3">
+                                        <input type="email" placeholder="Email Address" required />
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="field-group">
+                                                <input type="password" placeholder="Password" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                                            <div class="field-group">
+                                                <input type="password" placeholder="Re-enter Password" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="landlord-fields fields-container">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="field-group">
+                                                <input type="text" placeholder="First Name" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                                            <div class="field-group">
+                                                <input type="text" placeholder="Last Name" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field-group mt-3">
+                                        <input type="text" placeholder="Mobile Number" required />
+                                    </div>
+
+                                    <div class="field-group mt-3">
+                                        <input type="email" placeholder="Email Address" required />
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="field-group">
+                                                <input type="password" placeholder="Password" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                                            <div class="field-group">
+                                                <input type="password" placeholder="Re-enter Password" />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="d-flex align-items-center mt-4 i-agree checkbox-container">
@@ -127,9 +188,7 @@
                                     >
                                 </div>
 
-                                <a href="register.html" class="sign-up-as mt-4 d-block text-center text-dark-gray font-weight-light">
-                                    Sign up as <span class="text-primary font-weight-bold">TENANT</span> or <span class="text-primary font-weight-bold">LANDLORD</span>
-                                </a>
+                                <button class="button btn-register min-width d-block mx-auto mt-4">REGISTER</button>
                             </div>
                         </div>
                     </div>
@@ -233,23 +292,23 @@
                 $(".btn-as-tenant").click(function () {
                     $(".top-toggle .toggle-icon").removeClass("active");
                     $(".button-toggler button").removeClass("active");
+                    $(".fields-container").removeClass("active");
                     $(".top-toggle .toggle-icon.tenant-icon").addClass("active");
+                    $(".fields-container.tenant-fields").addClass("active");
                     $(this).addClass("active");
                 });
 
                 $(".btn-as-landlord").click(function () {
                     $(".top-toggle .toggle-icon").removeClass("active");
                     $(".button-toggler button").removeClass("active");
+                    $(".fields-container").removeClass("active");
                     $(".top-toggle .toggle-icon.landlord-icon").addClass("active");
+                    $(".fields-container.landlord-fields").addClass("active");
                     $(this).addClass("active");
                 });
 
                 $(".checkbox").click(function () {
                     $(this).toggleClass("active");
-                });
-
-                $(".remember-me-text").click(function () {
-                    $(this).parents(".checkbox-container").find(".checkbox").toggleClass("active");
                 });
 
                 $(".i-agree-text").click(function () {
