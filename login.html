@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Digi Rent - Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Required CSS -->
+        <link rel="stylesheet" href="./resources/vendors/bootstrap/css/bootstrap.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./resources/css/main.css" />
+        <link rel="stylesheet" href="./resources/css/login.css" />
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <!-- ===== HEADER ===== -->
+            <section class="layout-header">
+                <img src="./resources/images/header-bg.svg" alt="header background" class="header-background" />
+
+                <div class="header-logo-user">
+                    <div class="logo">
+                        <h1 class="text">DIGI RENT</h1>
+                    </div>
+
+                    <div class="user"></div>
+                </div>
+
+                <div class="header-menu">
+                    <div class="header-menu-wrapper">
+                        <div class="note">
+                            <span>List a property</span>
+                        </div>
+
+                        <div class="main-menu">
+                            <a href="#" class="px-2 uppercase text-white">Properties</a>
+                            <span>|</span>
+                            <a href="#" class="px-2 uppercase text-white">Messages</a>
+                            <span>|</span>
+                            <a href="#" class="px-2 uppercase text-white">Payments</a>
+                            <span>|</span>
+                            <a href="#" class="px-2 uppercase text-white">Contracts</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="header-back">
+                <div class="back">
+                    <img src="./resources/images/icon/icon-arrow-left-white.svg" alt="icon user" />
+                </div>
+            </div>
+
+            <!-- ===== MAIN CONTENT ===== -->
+            <section class="layout-content">
+                <img src="./resources/images/main-left-bg.svg" class="left-arrow-bg" alt="left bg" />
+                <img src="./resources/images/main-right-bg.svg" class="right-arrow-bg" alt="left bg" />
+                <div class="container">
+                    <h3 class="main-title">LOGIN</h3>
+                    <p class="main-desc text-center mt-4">
+                        We'll start creating the parts of the homepage first which includes login dialog. In the meantime, since we don't have the homepage yet, we'll just temporarily use this page to
+                        display login dialog.
+                    </p>
+
+                    <button class="button min-width mr-3 d-block mx-auto mt-5" data-toggle="modal" data-target="#login-modal">View Login</button>
+                </div>
+            </section>
+
+            <div class="modal fade" tabindex="-1" role="dialog" id="login-modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="icon-user rounded-icon primary mx-auto">
+                                <img src="./resources/images/icon/icon-user-white.svg" alt="item icon" />
+                            </div>
+                            <div class="top-toggle mx-auto d-block">
+                                <img class="toggle-bg mx-auto" src="./resources/images/login-register-toggle.svg" />
+                                <div class="toggle-icon tenant-icon active"></div>
+                                <div class="toggle-icon landlord-icon"></div>
+                            </div>
+
+                            <p class="title">LOGIN</p>
+
+                            <div class="button-toggler mt-2 d-flex">
+                                <button class="button min-width btn-as-tenant active">AS TENANT</button>
+                                <button class="button min-width btn-as-landlord">AS LANDLORD</button>
+                            </div>
+
+                            <div class="main-content mt-4">
+                                <div class="field-group">
+                                    <input type="email" placeholder="Email Address" required />
+                                </div>
+                                <div class="field-group mt-3">
+                                    <input type="password" placeholder="Password" required />
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between form-footer mt-3">
+                                    <div class="d-flex align-items-center checkbox-container">
+                                        <span class="rounded-icon checkbox">
+                                            <img src="./resources/images/icon/icon-check-primary.svg" />
+                                        </span>
+                                        <span class="ml-3 remember-me-text">Remember me</span>
+                                    </div>
+                                    <a href="#" class="forgot-password text-primary">Forgot password?</a>
+                                </div>
+
+                                <div class="login-button mt-3">
+                                    <div class="social-media-options">
+                                        <div class="item mr-3">
+                                            <img src="./resources/images/social-media/facebook-square.png" />
+                                        </div>
+                                        <div class="item">
+                                            <img src="./resources/images/social-media/google.png" />
+                                        </div>
+                                    </div>
+                                    <button class="button btn-login min-width">LOGIN</button>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-4 i-agree checkbox-container">
+                                    <span class="rounded-icon checkbox">
+                                        <img src="./resources/images/icon/icon-check-primary.svg" />
+                                    </span>
+                                    <span class="ml-3 i-agree-text"
+                                        >I agree to the <a href="extra-information.html" target="_blank" class="text-primary">Terms of Use</a> and
+                                        <a href="extra-information.html#cookies" target="_blank" class="text-primary">Privacy Policy</a></span
+                                    >
+                                </div>
+
+                                <a href="register.html" class="sign-up-as mt-4 d-block text-center text-dark-gray font-weight-light">
+                                    Sign up as <span class="text-primary font-weight-bold">TENANT</span> or <span class="text-primary font-weight-bold">LANDLORD</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="layout-footer">
+                <div class="subscriber-bg">
+                    <img src="./resources/images/subscriber-bg.svg" alt="subscriber image" />
+                </div>
+
+                <div class="subscriber">
+                    <div class="logo">
+                        <h1 class="text">DIGI RENT</h1>
+                    </div>
+                    <p class="subscriber-title"><span class="text-primary font-weight-bold">subscribe</span> <br class="d-block d-sm-none" />to receive our news</p>
+                    <div class="subscriber-form">
+                        <input placeholder="e-mail" />
+                        <button><img src="./resources/images/icon/icon-email-outline.svg" /></button>
+                    </div>
+                </div>
+
+                <div class="social-medias">
+                    <div class="icons">
+                        <a href="#"><img src="./resources/images/social-media/facebook.svg" class="icon" alt="facebook" /></a>
+                        <a href="#"><img src="./resources/images/social-media/instagram.svg" class="icon" alt="instagram" /></a>
+                        <a href="#"><img src="./resources/images/social-media/linkedin.svg" class="icon" alt="linkedin" /></a>
+                        <a href="#"><img src="./resources/images/social-media/youtube.svg" class="icon" alt="youtube" /></a>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="footer-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Cities</h3>
+                                <div class="list">
+                                    <a href="#">Amsterdam</a>
+                                    <a href="#">Den Haag</a>
+                                    <a href="#">Rotterdam</a>
+                                    <a href="#">Eindhoven</a>
+                                    <a href="#">Utrecht</a>
+                                    <a href="#">Arnhem</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Digi Rent</h3>
+                                <div class="list">
+                                    <a href="about.html">About Us</a>
+                                    <a href="#">Media</a>
+                                    <a href="extra-information.html">Terms &amp; Conditions</a>
+                                    <a href="extra-information.html#data-security">Data Security</a>
+                                    <a href="extra-information.html#cookies">Cookie Policy</a>
+                                    <a href="#">Sitemap</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Tenants</h3>
+                                <div class="list">
+                                    <a href="#">How to rent</a>
+                                    <a href="#">Pricing</a>
+                                    <a href="international-students-expats.html">Blog for internationals</a>
+                                    <a href="#">Rental Tips</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Landlords</h3>
+                                <div class="list">
+                                    <a href="#">How to rent out</a>
+                                    <a href="#">Pricing</a>
+                                    <a href="#">Rental Tips</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Support</h3>
+                                <div class="list">
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="contact.html">Contact Us</a>
+                                    <a href="#">Careers</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p class="copyright">Copyright 2020. All rights reserved</p>
+            </footer>
+        </div>
+
+        <!-- Required JS -->
+        <script src="./resources/vendors/jquery/jquery.min.js"></script>
+        <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            $(function () {
+                $("#login-modal").modal("show");
+
+                $(".btn-as-tenant").click(function () {
+                    $(".top-toggle .toggle-icon").removeClass("active");
+                    $(".button-toggler button").removeClass("active");
+                    $(".top-toggle .toggle-icon.tenant-icon").addClass("active");
+                    $(this).addClass("active");
+                });
+
+                $(".btn-as-landlord").click(function () {
+                    $(".top-toggle .toggle-icon").removeClass("active");
+                    $(".button-toggler button").removeClass("active");
+                    $(".top-toggle .toggle-icon.landlord-icon").addClass("active");
+                    $(this).addClass("active");
+                });
+
+                $(".checkbox").click(function () {
+                    $(this).toggleClass("active");
+                });
+
+                $(".remember-me-text").click(function () {
+                    $(this).parents(".checkbox-container").find(".checkbox").toggleClass("active");
+                });
+
+                $(".i-agree-text").click(function () {
+                    $(this).parents(".checkbox-container").find(".checkbox").toggleClass("active");
+                });
+            });
+        </script>
+    </body>
+</html>
