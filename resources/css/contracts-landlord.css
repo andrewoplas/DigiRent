@@ -26,6 +26,7 @@
   padding-top: 40px;
   padding-bottom: 20px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 .layout-content .process-list .item.active {
   border: 1px solid #41a2f9;
@@ -51,7 +52,6 @@
   position: absolute;
   top: -38px;
   right: 10px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
