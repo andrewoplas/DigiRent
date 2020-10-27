@@ -78,7 +78,8 @@ body {
   backdrop-filter: blur(10px);
 }
 
-button {
+button,
+.button-hover {
   transition: 300ms;
 
   &:hover {

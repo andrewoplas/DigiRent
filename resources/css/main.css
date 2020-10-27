@@ -232,6 +232,11 @@
   margin: 0;
   text-align: center;
 }
+@media (max-width: 575.98px) {
+  .layout-content .main-title {
+    font-size: 28px;
+  }
+}
 .layout-content .main-title-2 {
   font-family: Proxima Nova, sans-serif;
   font-weight: 300;
@@ -240,6 +245,12 @@
   padding: 0;
   margin: 0;
   text-align: center;
+  line-height: 25px;
+}
+@media (max-width: 575.98px) {
+  .layout-content .main-title-2 {
+    font-size: 22px;
+  }
 }
 .layout-content .main-subtitle {
   padding: 0;
@@ -249,6 +260,11 @@
   font-size: 18px;
   line-height: 100%;
   text-align: center;
+}
+@media (max-width: 575.98px) {
+  .layout-content .main-subtitle {
+    font-size: 16px;
+  }
 }
 .layout-content .main-subtitle.dark-gray {
   color: #7f7f7f;
@@ -271,6 +287,12 @@
   margin: 0;
   line-height: 28px;
   color: #7f7f7f;
+}
+@media (max-width: 575.98px) {
+  .layout-content .main-desc {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .layout-footer {
@@ -545,10 +567,12 @@ body {
   backdrop-filter: blur(10px);
 }
 
-button {
+button,
+.button-hover {
   transition: 300ms;
 }
-button:hover {
+button:hover,
+.button-hover:hover {
   transition: 300ms;
   filter: brightness(115%);
 }
@@ -607,6 +631,13 @@ textarea::placeholder {
 }
 .rounded-icon img {
   width: 45%;
+}
+.rounded-icon.small {
+  width: 45px;
+  height: 45px;
+}
+.rounded-icon.small img {
+  width: 50%;
 }
 
 .button {

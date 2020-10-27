@@ -7,18 +7,31 @@
     @include font(35px, $fw-light);
     @include clear-spacing;
     text-align: center;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 28px;
+    }
   }
 
   .main-title-2 {
     @include font(25px, $fw-light);
     @include clear-spacing;
     text-align: center;
+    line-height: 25px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 22px;
+    }
   }
 
   .main-subtitle {
     @include clear-spacing;
     @include font(18px, $fw-light);
     text-align: center;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
 
     &.dark-gray {
       color: $color-dark-gray;
@@ -41,5 +54,10 @@
     @include clear-spacing;
     line-height: 28px;
     color: $color-dark-gray;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 }
