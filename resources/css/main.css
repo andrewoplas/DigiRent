@@ -626,6 +626,12 @@ textarea::placeholder {
   width: 70px;
   border-radius: 50%;
 }
+@media (max-width: 767.98px) {
+  .rounded-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
 .rounded-icon.primary {
   background-color: #41a2f9;
 }

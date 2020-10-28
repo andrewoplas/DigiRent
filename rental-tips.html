@@ -2,15 +2,16 @@
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Digi Rent - FAQ</title>
+        <title>Digi Rent - Rental Tips</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Required CSS -->
         <link rel="stylesheet" href="./resources/vendors/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="./resources/vendors/slick/slick.css" />
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./resources/css/main.css" />
-        <link rel="stylesheet" href="./resources/css/faq.css" />
+        <link rel="stylesheet" href="./resources/css/rental-tips.css" />
     </head>
 
     <body>
@@ -56,153 +57,94 @@
             <section class="layout-content">
                 <img src="./resources/images/main-left-bg.svg" class="left-arrow-bg" alt="left bg" />
                 <img src="./resources/images/main-right-bg.svg" class="right-arrow-bg" alt="left bg" />
-                <div class="container">
-                    <h3 class="main-title">FAQ</h3>
-                    <p class="main-subtitle">HOW DOES IT WORK?</p>
-                    <div class="main-box">
-                        <p class="main-desc">
-                            We can imagine that we’ve missed something or you just want some better explanation. Please find more information below. We can always be reached by email or telephone if
-                            you can’t find your answer.
-                        </p>
+                <div class="container-fluid container-md">
+                    <h3 class="main-title">RENTAL TIPS</h3>
+
+                    <div class="selector-buttons">
+                        <div class="item for-tenants">
+                            <a href="#tenants">
+                                <div class="rounded-icon mx-auto">
+                                    <img class="icon-inactive" src="./resources/images/icon/icon-key-gray.svg" alt="item icon" />
+                                    <img class="icon-active" src="./resources/images/icon/icon-key-primary.svg" alt="item icon" />
+                                </div>
+                                <span class="text mt-3 d-block text-center">FOR TENANTS</span>
+                            </a>
+                        </div>
+
+                        <div class="item for-landlords">
+                            <a href="#landlords">
+                                <div class="rounded-icon mx-auto">
+                                    <img class="icon-inactive" src="./resources/images/icon/icon-roof-gray.svg" alt="item icon" />
+                                    <img class="icon-active" src="./resources/images/icon/icon-roof-primary.svg" alt="item icon" />
+                                </div>
+                                <span class="text mt-3 d-block text-center">FOR LANDLORDS</span>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="list row">
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-roof-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>I am looking for a rental house, how can I start?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
+                    <div class="list-carousel">
+                        <div class="item">
+                            <span class="number">1</span>
+                            <div class="main-box wrapper">
+                                <div class="top-background"></div>
+                                <img src="./resources/images/icon/icon-share-white.svg" class="share-icon" />
+                                <p class="main-desc text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p class="main-desc text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+
+                                <div class="reaction">
+                                    <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
+                                    <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-check-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>What are my chances at <span class="text-primary">Digi Rent</span>?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
+                        <div class="item">
+                            <span class="number">2</span>
+                            <div class="main-box wrapper">
+                                <div class="top-background"></div>
+                                <img src="./resources/images/icon/icon-share-white.svg" class="share-icon" />
+                                <p class="main-desc text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p class="main-desc text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+
+                                <div class="reaction">
+                                    <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
+                                    <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-chat-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>Can you respond immediately to rental properties?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
-                                </div>
-                            </div>
-                        </div>
+                        <div class="item">
+                            <span class="number">3</span>
+                            <div class="main-box wrapper">
+                                <div class="top-background"></div>
+                                <img src="./resources/images/icon/icon-share-white.svg" class="share-icon" />
+                                <p class="main-desc text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p class="main-desc text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
 
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-like-active.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>Is the offer up to date?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-smartphone-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>What is the phone number for <span class="text-primary">Digi Rent</span>?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-cash-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>I have paid but my account has not been activated. What should I do?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-search-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>I found a rental home. What now?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-cancel-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>How do I cancel my Premium account?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-report-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>Where can I report complaints?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="item">
-                                <div class="rounded-icon">
-                                    <img src="./resources/images/icon/icon-checklist-primary.svg" alt="item icon" />
-                                </div>
-                                <div class="desc-wrapper">
-                                    <span>Does the rental sector work with waiting lists or draw?</span>
-                                </div>
-                                <div class="button-nav primary s-40">
-                                    <img src="./resources/images/icon/icon-arrow-right-white.svg" alt="item icon" />
+                                <div class="reaction">
+                                    <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
+                                    <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
                                 </div>
                             </div>
                         </div>
@@ -229,11 +171,6 @@
                                     Yes, you will be able to respond directly when you’ve registered yourself at our website. Do know that a completer profile gives you more chances of being picked by
                                     the landlord
                                 </span>
-
-                                <div class="reaction">
-                                    <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
-                                    <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -331,28 +268,30 @@
         <!-- Required JS -->
         <script src="./resources/vendors/jquery/jquery.min.js"></script>
         <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./resources/vendors/slick/slick.min.js"></script>
 
         <script>
             $(function () {
-                $(".button-nav").click(function () {
-                    const item = $(this).parents(".item");
-                    const imgSrc = item.find(".rounded-icon img").attr("src");
-                    const title = item.find(".desc-wrapper > span").clone();
+                let hashValueChange = function () {
+                    $(".selector-buttons .item").removeClass("active");
+                    $(location.hash === "#landlords" ? ".for-landlords" : ".for-tenants").addClass("active");
+                };
+                hashValueChange();
+                $(window).on("hashchange", hashValueChange);
 
-                    const modal = $("#faq-modal");
-                    modal.find(".main-content .title").html(title);
-                    modal.find(".main-content .rounded-icon img").attr("src", imgSrc);
-                    modal.modal("show");
+                $(".list-carousel").slick({
+                    slidesToShow: 1,
+                    nextArrow: '<button class="button btn-next"><img src="./resources/images/icon/icon-caret-right-white.svg" /></button',
+                    prevArrow: '<button class="button btn-prev"><img src="./resources/images/icon/icon-caret-left-white.svg" /></button',
                 });
 
                 let dislike = "./resources/images/icon/icon-dislike.svg";
                 let dislikeActive = "./resources/images/icon/icon-dislike-active.svg";
                 let like = "./resources/images/icon/icon-like.svg";
                 let likeActive = "./resources/images/icon/icon-like-active.svg";
-
                 $(".reaction img").click(function () {
-                    $(".reaction img.icon-dislike").attr("src", dislike);
-                    $(".reaction img.icon-like").attr("src", like);
+                    $(this).parents(".reaction").find("img.icon-dislike").attr("src", dislike);
+                    $(this).parents(".reaction").find("img.icon-like").attr("src", like);
                     $(this).attr("src", $(this).data("type") === "like" ? likeActive : dislikeActive);
                 });
             });
