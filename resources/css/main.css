@@ -1103,3 +1103,28 @@ textarea::placeholder {
     margin: 0 5px !important;
   }
 }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+  position: relative;
+}
+.search-bar img {
+  width: 18px;
+  position: absolute;
+  right: 20px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: 0;
+  color: #7f7f7f;
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+}
