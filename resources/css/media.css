@@ -12,9 +12,8 @@
     padding-bottom: 150px;
   }
 }
-.layout-content .main-subtitle {
+.layout-content .main-desc {
   max-width: 860px;
-  font-size: 22px !important;
 }
 .layout-content .medias {
   margin-top: 50px;
