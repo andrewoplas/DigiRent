@@ -126,6 +126,9 @@
   flex-direction: row;
   margin-top: 40px;
 }
+#faq-modal .modal-body .reaction .item {
+  cursor: pointer;
+}
 #faq-modal .modal-body .reaction img {
   margin: 0 10px;
   width: 30px;

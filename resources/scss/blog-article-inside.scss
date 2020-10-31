@@ -172,6 +172,10 @@
     .reaction {
       @include flex(center, center);
 
+      .item {
+        cursor: pointer;
+      }
+
       img {
         width: 60%;
         &.icon-dislike {
@@ -335,6 +339,44 @@
           margin-top: 20px;
           padding: 25px;
         }
+      }
+    }
+  }
+}
+
+#comment-modal {
+  .modal-content {
+    overflow: hidden;
+  }
+
+  .modal-body {
+    padding: 0;
+    padding-bottom: 30px;
+    position: relative;
+
+    .modal-background {
+      transform: skew(0deg, -5deg);
+      height: 65px;
+      width: 100%;
+      position: absolute;
+      top: -22px;
+      left: 0;
+      background-color: $color-primary-lighter;
+    }
+
+    .main-content {
+      margin-top: -25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .button-nav {
+      z-index: 3;
+      margin-top: 10px;
+      margin-left: 10px;
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 15px;
       }
     }
   }

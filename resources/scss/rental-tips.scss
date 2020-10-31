@@ -154,6 +154,10 @@
           @include flex(center, center);
           margin-top: 30px;
 
+          .item {
+            cursor: pointer;
+          }
+
           img {
             margin: 0 10px;
             width: 30px;
@@ -164,83 +168,6 @@
               margin-top: 5px;
             }
           }
-        }
-      }
-    }
-  }
-}
-
-#faq-modal {
-  .modal-content {
-    overflow: hidden;
-  }
-
-  .modal-body {
-    padding: 0;
-    padding-bottom: 30px;
-    position: relative;
-
-    .modal-background {
-      transform: skew(0deg, -5deg);
-      height: 65px;
-      width: 100%;
-      position: absolute;
-      top: -22px;
-      left: 0;
-      background-color: $color-primary-lighter;
-    }
-
-    .main-content {
-      margin-top: -25px;
-      position: relative;
-      z-index: 2;
-
-      .title {
-        max-width: 180px;
-        display: block;
-        margin-top: 45px;
-        @include font(18px, 400);
-        color: $color-dark-gray;
-        text-align: center;
-        line-height: 25px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .description {
-        display: block;
-        margin-top: 8px;
-        @include font(18px, $fw-light);
-        color: #b8b8b8;
-        text-align: center;
-        line-height: 30px;
-        padding-left: 25px;
-        padding-right: 25px;
-      }
-    }
-
-    .button-nav {
-      z-index: 3;
-      margin-top: 10px;
-      margin-left: 10px;
-
-      @include media-breakpoint-down(sm) {
-        margin-left: 15px;
-      }
-    }
-
-    .reaction {
-      @include flex(center, center);
-      margin-top: 40px;
-
-      img {
-        margin: 0 10px;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-
-        &.icon-dislike {
-          margin-top: 5px;
         }
       }
     }

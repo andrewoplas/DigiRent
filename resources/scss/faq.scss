@@ -127,6 +127,10 @@
       @include flex(center, center);
       margin-top: 40px;
 
+      .item {
+        cursor: pointer;
+      }
+
       img {
         margin: 0 10px;
         width: 30px;
