@@ -112,9 +112,10 @@
       .house-bg {
         height: 325px;
         width: 100%;
-        background-image: url("../../resources/images/house-sample.jpg");
+        background-image: url("../../resources/images/house-sample-1.jpg");
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
         border-bottom-left-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
         position: relative;
@@ -319,6 +320,7 @@
         background-image: url("../../resources/images/student-sample-photo.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
         border-top-left-radius: $border-radius;

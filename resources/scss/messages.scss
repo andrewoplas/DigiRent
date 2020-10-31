@@ -71,6 +71,7 @@
         background-image: url("../../resources/images/message-user-sample.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
 
         @include media-breakpoint-down(xs) {
           width: 50px;
@@ -152,6 +153,7 @@
       background-image: url("../../resources/images/message-user-sample.jpg");
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
 
       @include media-breakpoint-down(xs) {
         width: 50px;

@@ -16,12 +16,98 @@
   max-width: 860px;
   font-size: 22px !important;
 }
-.layout-content .medias .item {
+.layout-content .medias {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media (max-width: 767.98px) {
+  .layout-content .medias {
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.layout-content .medias .media-item {
+  margin-top: 80px;
+}
+@media (max-width: 991.98px) {
+  .layout-content .medias .media-item {
+    margin-top: 50px;
+  }
+}
+.layout-content .medias .media-item .thumbnail {
+  height: 450px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.layout-content .medias .media-item .thumbnail .icon-play-button {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1600px) {
+  .layout-content .medias .media-item .thumbnail {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .layout-content .medias .media-item .thumbnail {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .layout-content .medias .media-item .thumbnail {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .layout-content .medias .media-item .thumbnail {
+    height: 500px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .layout-content .medias .media-item .thumbnail {
+    height: 600px;
+  }
+}
+.layout-content .medias .media-item .information {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
 }
-.layout-content .medias .item .thumbnail {
-  height: 450px;
+.layout-content .medias .media-item .information .title {
+  padding: 0;
+  margin: 0;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: #606060;
+}
+@media (max-width: 767.98px) {
+  .layout-content .medias .media-item .information {
+    flex-wrap: wrap;
+  }
+  .layout-content .medias .media-item .information .title {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    order: 1;
+  }
+  .layout-content .medias .media-item .information > .rounded-icon {
+    order: 2;
+  }
+  .layout-content .medias .media-item .information .reaction {
+    order: 3;
+  }
 }

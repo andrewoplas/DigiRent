@@ -89,6 +89,7 @@
   background-image: url("../../resources/images/landlord-sample-photo.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 @media (max-width: 1599.98px) {
   .layout-header .header-logo-user .logo {

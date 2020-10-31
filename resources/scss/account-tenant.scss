@@ -29,6 +29,7 @@
         background-image: url("../../resources/images/tenant-sample-photo.jpg");
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
         @include flex(space-between, center);
         border-top-left-radius: $border-radius;
         border-top-right-radius: $border-radius;
