@@ -9,6 +9,14 @@
   border-radius: 20px;
   position: relative;
 
+  &.primary {
+    background-color: $color-primary;
+
+    .value {
+      color: white !important;
+    }
+  }
+
   &.active {
     .choices {
       display: block;

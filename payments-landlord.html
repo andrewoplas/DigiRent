@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Digi Rent - Payments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Required CSS -->
+        <link rel="stylesheet" href="./resources/vendors/bootstrap/css/bootstrap.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./resources/css/main.css" />
+        <link rel="stylesheet" href="./resources/css/payments-landlord.css" />
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <!-- ===== HEADER ===== -->
+            <section class="layout-header">
+                <img src="./resources/images/header-bg.svg" alt="header background" class="header-background" />
+
+                <div class="header-logo-user">
+                    <div class="logo">
+                        <h1 class="text">DIGI RENT</h1>
+                    </div>
+
+                    <div class="user"></div>
+                </div>
+
+                <div class="header-menu">
+                    <div class="header-menu-wrapper">
+                        <div class="note">
+                            <span>Tenants List</span>
+                        </div>
+
+                        <div class="main-menu">
+                            <a href="#" class="px-2 uppercase text-white">Properties</a>
+                            <span>|</span>
+                            <a href="#" class="px-2 uppercase text-white">Messages</a>
+                            <span>|</span>
+                            <a href="#" class="px-2 uppercase text-white">Payments</a>
+                            <span>|</span>
+                            <a href="#" class="px-2 uppercase text-white">Contracts</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="header-back">
+                <div class="back">
+                    <img src="./resources/images/icon/icon-arrow-left-white.svg" alt="icon user" />
+                </div>
+            </div>
+
+            <!-- ===== MAIN CONTENT ===== -->
+            <section class="layout-content">
+                <img src="./resources/images/main-left-bg.svg" class="left-arrow-bg" alt="left bg" />
+                <img src="./resources/images/main-right-bg.svg" class="right-arrow-bg" alt="left bg" />
+                <div class="container-fluid container-lg">
+                    <h3 class="main-title">PAYMENTS</h3>
+
+                    <div class="payments mt-5">
+                        <div class="header">
+                            <p class="text-escrow">UPLOAD PAYMENT TO ESCROW</p>
+                            <p class="text-paid">PAID</p>
+                            <p class="text-keys">
+                                HANDED THE KEYS AND DELIVERED APARTMENT AS PROMISED?
+                                <span class="subtitle">TO RELEASE THE PAYMENTS</span>
+                            </p>
+                        </div>
+
+                        <div class="item mt-3">
+                            <div class="escrow">
+                                <p class="column-label d-block d-md-none">UPLOAD PAYMENTS TO ESCROW</p>
+                                <span class="text">First monthly payment</span>
+                            </div>
+
+                            <div class="paid">
+                                <p class="column-label d-block d-md-none">PAID</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="button-icon green">
+                                        <img src="./resources/images/icon/icon-check-white.svg" />
+                                    </button>
+
+                                    <button class="button-icon gray2">
+                                        <img src="./resources/images/icon/icon-cancel-dark-gray.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="keys">
+                                <p class="column-label d-block d-md-none">HANDED THE KEYS AND DELIVERED APARTMENT AS PROMISED?</p>
+                                <div class="buttons">
+                                    <button class="button min-width-100" data-toggle="modal" data-target="#keys-modal">YES</button>
+                                    <button class="button min-width-100 gray2" data-toggle="modal" data-target="#keys-modal">NO</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item no-keys mt-3">
+                            <div class="escrow">
+                                <p class="column-label d-block d-md-none">UPLOAD PAYMENTS TO ESCROW</p>
+                                <span class="text">Security deposit</span>
+                            </div>
+
+                            <div class="paid">
+                                <p class="column-label d-block d-md-none">PAID</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="button-icon green">
+                                        <img src="./resources/images/icon/icon-check-white.svg" />
+                                    </button>
+
+                                    <button class="button-icon gray2">
+                                        <img src="./resources/images/icon/icon-cancel-dark-gray.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="main-subtitle monthly-payments-subtitle">MONTHLY <span class="font-weight-bold text-primary">PAYMENTS</span></h3>
+
+                    <div class="sort">
+                        <p class="main-desc mr-4">Sort by:</p>
+
+                        <div class="field-group-select select primary">
+                            <span class="value">YEAR</span>
+                            <button class="btn-dropdown">
+                                <img src="./resources/images/icon/icon-caret-down-white.svg" alt="item icon" />
+                            </button>
+                            <div class="choices">
+                                <div class="item">YEAR 2021</div>
+                                <div class="item">YEAR 2022</div>
+                                <div class="item">YEAR 2023</div>
+                                <div class="item">YEAR 2024</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="monthly-payments">
+                        <div class="header">
+                            <p class="text-escrow">MONTH</p>
+                            <p class="text-paid">PAID</p>
+                            <p class="text-keys">INVOICE</p>
+                        </div>
+
+                        <div class="item mt-3">
+                            <div class="escrow">
+                                <p class="column-label d-block d-md-none">MONTH</p>
+                                <span class="text">January</span>
+                            </div>
+
+                            <div class="paid">
+                                <p class="column-label d-block d-md-none">PAID</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="button-icon green">
+                                        <img src="./resources/images/icon/icon-check-white.svg" />
+                                    </button>
+
+                                    <button class="button-icon gray2">
+                                        <img src="./resources/images/icon/icon-cancel-dark-gray.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="keys">
+                                <button class="button min-width">VIEW INVOICE</button>
+                            </div>
+                        </div>
+
+                        <div class="item mt-3">
+                            <div class="escrow">
+                                <p class="column-label d-block d-md-none">MONTH</p>
+                                <span class="text">February</span>
+                            </div>
+
+                            <div class="paid">
+                                <p class="column-label d-block d-md-none">PAID</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="button-icon green">
+                                        <img src="./resources/images/icon/icon-check-white.svg" />
+                                    </button>
+
+                                    <button class="button-icon gray2">
+                                        <img src="./resources/images/icon/icon-cancel-dark-gray.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="keys">
+                                <button class="button min-width">VIEW INVOICE</button>
+                            </div>
+                        </div>
+
+                        <div class="item mt-3">
+                            <div class="escrow">
+                                <p class="column-label d-block d-md-none">MONTH</p>
+                                <span class="text">March</span>
+                            </div>
+
+                            <div class="paid">
+                                <p class="column-label d-block d-md-none">PAID</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="button-icon green">
+                                        <img src="./resources/images/icon/icon-check-white.svg" />
+                                    </button>
+
+                                    <button class="button-icon gray2">
+                                        <img src="./resources/images/icon/icon-cancel-dark-gray.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="keys">
+                                <button class="button min-width">VIEW INVOICE</button>
+                            </div>
+                        </div>
+
+                        <div class="item mt-3">
+                            <div class="escrow">
+                                <p class="column-label d-block d-md-none">MONTH</p>
+                                <span class="text">April</span>
+                            </div>
+
+                            <div class="paid position-relative">
+                                <p class="column-label d-block d-md-none">PAID</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <div class="payments-reminder d-none">
+                                        <div class="item d-flex align-items-center">
+                                            <span class="circular-icon mr-2"></span>
+                                            <span class="text">SEND PAYMENTS REMINDER</span>
+                                        </div>
+                                    </div>
+                                    <button class="button-icon gray2">
+                                        <img src="./resources/images/icon/icon-cancel-dark-gray.svg" />
+                                    </button>
+
+                                    <button class="button-icon btn-send-payments primary" data-toggle="modal" data-target="#send-pay-reminder-modal">
+                                        <img src="./resources/images/icon/icon-euro-white.svg" />
+                                        <p class="question-icon">?</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="keys">
+                                <button class="button min-width disabled">NOT AVAILABLE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal fade confirmation-modal" tabindex="-1" role="dialog" id="keys-modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="modal-background"></div>
+
+                            <div class="main-content">
+                                <span class="title font-weight-light">DID YOU HANDED THE KEYS AND DELIVER APARTMENTS AS PROMISED?</span>
+
+                                <div class="d-flex align-items-center justify-content-center mt-4">
+                                    <button class="button min-width mr-3" data-dismiss="modal">YES</button>
+                                    <button class="button gray2 min-width" data-dismiss="modal">NO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade confirmation-modal" tabindex="-1" role="dialog" id="send-pay-reminder-modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="modal-background"></div>
+
+                            <div class="main-content">
+                                <span class="title font-weight-light">ARE YOU SURE YOU WANT TO SEND A PAY REMINDER?</span>
+
+                                <div class="d-flex align-items-center justify-content-center mt-4">
+                                    <button class="button min-width mr-3" data-dismiss="modal">YES</button>
+                                    <button class="button gray2 min-width" data-dismiss="modal">NO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="layout-footer">
+                <div class="subscriber-bg">
+                    <img src="./resources/images/subscriber-bg.svg" alt="subscriber image" />
+                </div>
+
+                <div class="subscriber">
+                    <div class="logo">
+                        <h1 class="text">DIGI RENT</h1>
+                    </div>
+                    <p class="subscriber-title"><span class="text-primary font-weight-bold">subscribe</span> <br class="d-block d-sm-none" />to receive our news</p>
+                    <div class="subscriber-form">
+                        <input placeholder="e-mail" />
+                        <button><img src="./resources/images/icon/icon-email-outline.svg" /></button>
+                    </div>
+                </div>
+
+                <div class="social-medias">
+                    <div class="icons">
+                        <a href="#"><img src="./resources/images/social-media/facebook.svg" class="icon" alt="facebook" /></a>
+                        <a href="#"><img src="./resources/images/social-media/instagram.svg" class="icon" alt="instagram" /></a>
+                        <a href="#"><img src="./resources/images/social-media/linkedin.svg" class="icon" alt="linkedin" /></a>
+                        <a href="#"><img src="./resources/images/social-media/youtube.svg" class="icon" alt="youtube" /></a>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="footer-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Cities</h3>
+                                <div class="list">
+                                    <a href="#">Amsterdam</a>
+                                    <a href="#">Den Haag</a>
+                                    <a href="#">Rotterdam</a>
+                                    <a href="#">Eindhoven</a>
+                                    <a href="#">Utrecht</a>
+                                    <a href="#">Arnhem</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Digi Rent</h3>
+                                <div class="list">
+                                    <a href="about.html">About Us</a>
+                                    <a href="media.html">Media</a>
+                                    <a href="extra-information.html">Terms &amp; Conditions</a>
+                                    <a href="extra-information.html#data-security">Data Security</a>
+                                    <a href="extra-information.html#cookies">Cookie Policy</a>
+                                    <a href="#">Sitemap</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Tenants</h3>
+                                <div class="list">
+                                    <a href="#">How to rent</a>
+                                    <a href="pricing.html">Pricing</a>
+                                    <a href="international-students-expats.html">Blog for internationals</a>
+                                    <a href="rental-tips.html#tenants">Rental Tips</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Landlords</h3>
+                                <div class="list">
+                                    <a href="#">How to rent out</a>
+                                    <a href="pricing.html">Pricing</a>
+                                    <a href="rental-tips.html#landlords">Rental Tips</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg header-column">
+                                <h3>Support</h3>
+                                <div class="list">
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="contact.html">Contact Us</a>
+                                    <a href="#">Careers</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p class="copyright">Copyright 2020. All rights reserved</p>
+            </footer>
+        </div>
+
+        <!-- Required JS -->
+        <script src="./resources/vendors/jquery/jquery.min.js"></script>
+        <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Main JS -->
+        <script src="./resources/js/main.js"></script>
+
+        <script>
+            $(function () {
+                $(".btn-send-payments").mouseover(function () {
+                    $(".payments-reminder").removeClass("d-none");
+                });
+
+                $(".btn-send-payments").mouseout(function () {
+                    $(".payments-reminder").addClass("d-none");
+                });
+            });
+        </script>
+    </body>
+</html>

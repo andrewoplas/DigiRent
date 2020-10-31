@@ -672,6 +672,11 @@ textarea::placeholder {
 .button.gray2 {
   background-color: #cecece;
 }
+.button.disabled {
+  pointer-events: none;
+  color: #7f7f7f !important;
+  background-color: #cecece !important;
+}
 .button.outline {
   border: 1px solid #41a2f9;
   color: #41a2f9 !important;
@@ -679,6 +684,9 @@ textarea::placeholder {
 }
 .button.min-width {
   min-width: 140px;
+}
+.button.min-width-100 {
+  min-width: 100px;
 }
 
 .button-nav {
@@ -737,6 +745,32 @@ textarea::placeholder {
   font-weight: 300;
   font-size: 16px;
   line-height: 100%;
+}
+
+.button-icon {
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 0;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  cursor: pointer;
+}
+.button-icon.primary {
+  background-color: #41a2f9;
+}
+.button-icon.green {
+  background-color: #00cd46;
+}
+.button-icon.gray2 {
+  background-color: #cecece;
+}
+.button-icon > img {
+  width: 50%;
 }
 
 .field-group {
@@ -888,6 +922,12 @@ textarea::placeholder {
   padding: 10px 20px;
   border-radius: 20px;
   position: relative;
+}
+.field-group-select.primary {
+  background-color: #41a2f9;
+}
+.field-group-select.primary .value {
+  color: white !important;
 }
 .field-group-select.active .choices {
   display: block;

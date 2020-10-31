@@ -1,0 +1,503 @@
+.layout-content {
+  padding-top: 7px;
+  padding-bottom: 400px;
+}
+@media (max-width: 1199.98px) {
+  .layout-content {
+    padding-bottom: 250px;
+  }
+}
+@media (max-width: 767.98px) {
+  .layout-content {
+    padding-bottom: 150px;
+  }
+}
+.layout-content .payments .header {
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: white;
+}
+@media (max-width: 767.98px) {
+  .layout-content .payments .header {
+    display: none;
+  }
+}
+.layout-content .payments .header p {
+  padding: 0;
+  margin: 0;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 34px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  max-height: 100%;
+}
+.layout-content .payments .header p.text-escrow {
+  justify-content: flex-start;
+  flex-basis: 25%;
+}
+.layout-content .payments .header p.text-paid {
+  align-self: stretch;
+  flex-basis: 20%;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.layout-content .payments .header p.text-keys {
+  flex-basis: 55%;
+  flex-wrap: wrap;
+}
+@media (max-width: 991.98px) {
+  .layout-content .payments .header p.text-escrow {
+    flex-basis: 25%;
+  }
+  .layout-content .payments .header p.text-paid {
+    flex-basis: 30%;
+  }
+  .layout-content .payments .header p.text-keys {
+    flex-basis: 45%;
+  }
+}
+.layout-content .payments .item {
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: white;
+}
+@media (max-width: 767.98px) {
+  .layout-content .payments .item {
+    flex-wrap: wrap;
+  }
+}
+.layout-content .payments .item > *.escrow {
+  padding: 0;
+  margin: 0;
+  flex-basis: 25%;
+}
+.layout-content .payments .item > *.escrow .text {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 100%;
+}
+.layout-content .payments .item > *.paid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-basis: 20%;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.layout-content .payments .item > *.paid .button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.layout-content .payments .item > *.keys {
+  flex-basis: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.layout-content .payments .item > *.keys .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.layout-content .payments .item > *.keys .buttons .button {
+  margin: 0 5px;
+  flex-shrink: 0;
+}
+.layout-content .payments .item > * .column-label {
+  padding: 0;
+  margin: 0;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 100%;
+  flex-basis: 40%;
+  line-height: 15px;
+}
+@media (max-width: 991.98px) {
+  .layout-content .payments .item > *.escrow {
+    flex-basis: 25%;
+  }
+  .layout-content .payments .item > *.paid {
+    flex-basis: 30%;
+  }
+  .layout-content .payments .item > *.keys {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 767.98px) {
+  .layout-content .payments .item > * {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-basis: 100% !important;
+    justify-content: space-between !important;
+  }
+  .layout-content .payments .item > *:not(:last-child) {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #eaeaea;
+  }
+  .layout-content .payments .item > *.paid {
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .layout-content .payments .item > *.paid {
+    flex-wrap: wrap;
+  }
+  .layout-content .payments .item > *.paid .button-wrapper {
+    width: 100%;
+  }
+  .layout-content .payments .item > *.paid .column-label {
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .layout-content .payments .item > *.keys {
+    flex-wrap: wrap;
+  }
+  .layout-content .payments .item > *.keys .buttons {
+    flex-basis: 100%;
+  }
+  .layout-content .payments .item > *.keys .column-label {
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+}
+.layout-content .payments .item.no-keys {
+  max-width: 45.5%;
+}
+@media (max-width: 991.98px) {
+  .layout-content .payments .item.no-keys {
+    max-width: 56%;
+  }
+}
+@media (max-width: 767.98px) {
+  .layout-content .payments .item.no-keys {
+    max-width: 100%;
+  }
+}
+.layout-content .payments .item.no-keys > *.escrow {
+  flex-basis: 59%;
+}
+.layout-content .payments .item.no-keys > *.paid {
+  padding-left: 20px;
+  flex-basis: 42%;
+  border-right: 0 !important;
+}
+@media (max-width: 991.98px) {
+  .layout-content .payments .item.no-keys > *.escrow {
+    flex-basis: 48%;
+  }
+  .layout-content .payments .item.no-keys > *.paid {
+    padding-left: 10px;
+    flex-basis: 53%;
+  }
+}
+@media (max-width: 767.98px) {
+  .layout-content .payments .item.no-keys > *.paid {
+    padding-left: 0;
+  }
+}
+.layout-content .monthly-payments-subtitle {
+  margin-top: 150px;
+}
+.layout-content .sort {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.layout-content .sort .select {
+  width: 180px;
+}
+.layout-content .monthly-payments {
+  margin-top: 50px;
+}
+.layout-content .monthly-payments .header {
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: white;
+}
+@media (max-width: 767.98px) {
+  .layout-content .monthly-payments .header {
+    display: none;
+  }
+}
+.layout-content .monthly-payments .header p {
+  padding: 0;
+  margin: 0;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 34px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  max-height: 100%;
+}
+.layout-content .monthly-payments .header p.text-escrow {
+  justify-content: flex-start;
+  flex-basis: 25%;
+}
+.layout-content .monthly-payments .header p.text-paid {
+  align-self: stretch;
+  flex-basis: 20%;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.layout-content .monthly-payments .header p.text-keys {
+  flex-basis: 55%;
+  flex-wrap: wrap;
+}
+.layout-content .monthly-payments .header p.text-keys .subtitle {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  color: #adadad;
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+@media (max-width: 991.98px) {
+  .layout-content .monthly-payments .header p.text-escrow {
+    flex-basis: 25%;
+  }
+  .layout-content .monthly-payments .header p.text-paid {
+    flex-basis: 30%;
+  }
+  .layout-content .monthly-payments .header p.text-keys {
+    flex-basis: 45%;
+  }
+}
+.layout-content .monthly-payments > .item {
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: white;
+}
+@media (max-width: 767.98px) {
+  .layout-content .monthly-payments > .item {
+    flex-wrap: wrap;
+  }
+}
+.layout-content .monthly-payments > .item > *.escrow {
+  padding: 0;
+  margin: 0;
+  flex-basis: 25%;
+}
+.layout-content .monthly-payments > .item > *.escrow .text {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 100%;
+}
+.layout-content .monthly-payments > .item > *.paid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-basis: 20%;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.layout-content .monthly-payments > .item > *.paid .button-icon {
+  margin: 0 5px;
+  flex-shrink: 0;
+  position: relative;
+}
+.layout-content .monthly-payments > .item > *.paid .button-icon .question-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: #7f7f7f;
+}
+.layout-content .monthly-payments > .item > *.keys {
+  flex-basis: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.layout-content .monthly-payments > .item > * .column-label {
+  padding: 0;
+  margin: 0;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 100%;
+  flex-basis: 40%;
+  line-height: 15px;
+}
+@media (max-width: 991.98px) {
+  .layout-content .monthly-payments > .item > *.escrow {
+    flex-basis: 25%;
+  }
+  .layout-content .monthly-payments > .item > *.paid {
+    flex-basis: 30%;
+  }
+  .layout-content .monthly-payments > .item > *.keys {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 767.98px) {
+  .layout-content .monthly-payments > .item > * {
+    flex-basis: 100% !important;
+  }
+  .layout-content .monthly-payments > .item > *:not(:last-child) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #eaeaea;
+  }
+  .layout-content .monthly-payments > .item > *.paid {
+    justify-content: space-between !important;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.confirmation-modal .modal-content {
+  overflow: hidden;
+}
+.confirmation-modal .modal-body {
+  padding: 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+.confirmation-modal .modal-body .modal-background {
+  transform: skew(0deg, -5deg);
+  height: 65px;
+  width: 100%;
+  position: absolute;
+  top: -22px;
+  left: 0;
+  background-color: #d3eaff;
+}
+.confirmation-modal .modal-body .main-content {
+  padding: 70px 25px 30px 25px;
+  position: relative;
+  z-index: 2;
+}
+.confirmation-modal .modal-body .main-content .title {
+  display: block;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #7f7f7f;
+  text-align: center;
+  line-height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+}
+
+.payments-reminder {
+  position: relative;
+  width: 225px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 8px 14px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50px;
+}
+@media (max-width: 767.98px) {
+  .payments-reminder {
+    display: none;
+  }
+}
+.payments-reminder .item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.payments-reminder .item .circular-icon {
+  height: 10px;
+  width: 10px;
+  background-color: #41a2f9;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.payments-reminder .item .text {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  color: #7f7f7f;
+}

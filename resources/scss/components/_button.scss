@@ -25,6 +25,12 @@
     background-color: $color-gray2;
   }
 
+  &.disabled {
+    pointer-events: none;
+    color: $color-dark-gray !important;
+    background-color: $color-gray2 !important;
+  }
+
   &.outline {
     border: 1px solid $color-primary;
     color: $color-primary !important;
@@ -33,6 +39,10 @@
 
   &.min-width {
     min-width: 140px;
+  }
+
+  &.min-width-100 {
+    min-width: 100px;
   }
 }
 
@@ -88,5 +98,32 @@
     display: block;
     color: white;
     @include font(16px, $fw-light);
+  }
+}
+
+.button-icon {
+  @include simple-shadow;
+  @include flex(center, center);
+  border: 0;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  cursor: pointer;
+
+  &.primary {
+    background-color: $color-primary;
+  }
+
+  &.green {
+    background-color: $color-green;
+  }
+
+  &.gray2 {
+    background-color: $color-gray2;
+  }
+
+  & > img {
+    width: 50%;
   }
 }
