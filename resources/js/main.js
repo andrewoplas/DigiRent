@@ -41,8 +41,10 @@ $(function () {
   let like = "./resources/images/icon/icon-like.svg";
   let likeActive = "./resources/images/icon/icon-like-active.svg";
   $(".reaction .item").click(function () {
-    $(".reaction img.icon-dislike").attr("src", dislike);
-    $(".reaction img.icon-like").attr("src", like);
+    let parent = $(this).parents(".reaction");
+    parent.find("img.icon-dislike").attr("src", dislike);
+    parent.find("img.icon-like").attr("src", like);
+
     let img = $(this).find("img");
     img.attr("src", img.data("type") == "like" ? likeActive : dislikeActive);
   });
