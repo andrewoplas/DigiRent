@@ -170,21 +170,6 @@
 .layout-content .blog-content-wrapper .add-comment img {
   width: 30px;
 }
-.layout-content .blog-content-wrapper .reaction {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.layout-content .blog-content-wrapper .reaction .item {
-  cursor: pointer;
-}
-.layout-content .blog-content-wrapper .reaction img {
-  width: 60%;
-}
-.layout-content .blog-content-wrapper .reaction img.icon-dislike {
-  margin-top: 5px;
-}
 @media (max-width: 991.98px) {
   .layout-content .sidebar {
     margin-top: 200px;

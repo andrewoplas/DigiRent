@@ -438,19 +438,7 @@
         <script src="./resources/vendors/jquery/jquery.min.js"></script>
         <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <script>
-            $(function () {
-                let dislike = "./resources/images/icon/icon-dislike.svg";
-                let dislikeActive = "./resources/images/icon/icon-dislike-active.svg";
-                let like = "./resources/images/icon/icon-like.svg";
-                let likeActive = "./resources/images/icon/icon-like-active.svg";
-                $(".reaction .item").click(function () {
-                    $(".reaction img.icon-dislike").attr("src", dislike);
-                    $(".reaction img.icon-like").attr("src", like);
-                    let img = $(this).find("img");
-                    img.attr("src", img.data("type") == "like" ? likeActive : dislikeActive);
-                });
-            });
-        </script>
+        <!-- Main JS -->
+        <script src="./resources/js/main.js"></script>
     </body>
 </html>

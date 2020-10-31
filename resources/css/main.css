@@ -257,9 +257,10 @@
   margin: 0;
   font-family: Proxima Nova, sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 100%;
   text-align: center;
+  line-height: 28px;
 }
 @media (max-width: 575.98px) {
   .layout-content .main-subtitle {
@@ -627,7 +628,7 @@ textarea::placeholder {
   border-radius: 50%;
 }
 @media (max-width: 767.98px) {
-  .rounded-icon {
+  .rounded-icon:not(.not-responsive) {
     height: 50px;
     width: 50px;
   }
@@ -1127,4 +1128,23 @@ textarea::placeholder {
   font-weight: 300;
   font-size: 16px;
   line-height: 100%;
+}
+
+.reaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.reaction.no-shadow .item {
+  box-shadow: none !important;
+}
+.reaction .item {
+  cursor: pointer;
+}
+.reaction .item img {
+  width: 60%;
+}
+.reaction .item img.icon-dislike {
+  margin-top: 5px;
 }

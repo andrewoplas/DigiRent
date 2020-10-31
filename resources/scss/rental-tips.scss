@@ -149,26 +149,6 @@
           left: 0;
           background-color: $color-primary-lighter;
         }
-
-        .reaction {
-          @include flex(center, center);
-          margin-top: 30px;
-
-          .item {
-            cursor: pointer;
-          }
-
-          img {
-            margin: 0 10px;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-
-            &.icon-dislike {
-              margin-top: 5px;
-            }
-          }
-        }
       }
     }
   }

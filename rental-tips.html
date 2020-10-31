@@ -98,9 +98,13 @@
                                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
 
-                                <div class="reaction">
-                                    <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
-                                    <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
+                                <div class="reaction no-shadow mt-5">
+                                    <div class="item rounded-icon small mx-1">
+                                        <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
+                                    </div>
+                                    <div class="item rounded-icon small mx-1">
+                                        <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -120,9 +124,13 @@
                                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
 
-                                <div class="reaction">
-                                    <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
-                                    <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
+                                <div class="reaction no-shadow mt-5">
+                                    <div class="item rounded-icon small mx-1">
+                                        <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
+                                    </div>
+                                    <div class="item rounded-icon small mx-1">
+                                        <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -142,9 +150,13 @@
                                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
 
-                                <div class="reaction">
-                                    <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
-                                    <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
+                                <div class="reaction no-shadow mt-5">
+                                    <div class="item rounded-icon small mx-1">
+                                        <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
+                                    </div>
+                                    <div class="item rounded-icon small mx-1">
+                                        <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -270,6 +282,9 @@
         <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="./resources/vendors/slick/slick.min.js"></script>
 
+        <!-- Main JS -->
+        <script src="./resources/js/main.js"></script>
+
         <script>
             $(function () {
                 let hashValueChange = function () {
@@ -283,16 +298,6 @@
                     slidesToShow: 1,
                     nextArrow: '<button class="button btn-next"><img src="./resources/images/icon/icon-caret-right-white.svg" /></button',
                     prevArrow: '<button class="button btn-prev"><img src="./resources/images/icon/icon-caret-left-white.svg" /></button',
-                });
-
-                let dislike = "./resources/images/icon/icon-dislike.svg";
-                let dislikeActive = "./resources/images/icon/icon-dislike-active.svg";
-                let like = "./resources/images/icon/icon-like.svg";
-                let likeActive = "./resources/images/icon/icon-like-active.svg";
-                $(".reaction img").click(function () {
-                    $(this).parents(".reaction").find("img.icon-dislike").attr("src", dislike);
-                    $(this).parents(".reaction").find("img.icon-like").attr("src", like);
-                    $(this).attr("src", $(this).data("type") === "like" ? likeActive : dislikeActive);
                 });
             });
         </script>

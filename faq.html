@@ -69,7 +69,7 @@
                     <div class="list row">
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-roof-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -83,7 +83,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-check-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -97,7 +97,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-chat-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -111,7 +111,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-like-active.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -125,7 +125,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-smartphone-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -139,7 +139,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-cash-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -153,7 +153,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-search-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -167,7 +167,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-cancel-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -181,7 +181,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-report-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -195,7 +195,7 @@
 
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="item">
-                                <div class="rounded-icon">
+                                <div class="rounded-icon not-responsive">
                                     <img src="./resources/images/icon/icon-checklist-primary.svg" alt="item icon" />
                                 </div>
                                 <div class="desc-wrapper">
@@ -220,7 +220,7 @@
                             </button>
 
                             <div class="main-content">
-                                <div class="rounded-icon mx-auto">
+                                <div class="rounded-icon main-icon mx-auto">
                                     <img src="./resources/images/icon/icon-tick.svg" alt="item icon" />
                                 </div>
 
@@ -230,9 +230,13 @@
                                     the landlord
                                 </span>
 
-                                <div class="reaction">
-                                    <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
-                                    <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
+                                <div class="reaction no-shadow mt-5">
+                                    <div class="item rounded-icon small mx-1">
+                                        <img data-type="like" src="./resources/images/icon/icon-like.svg" class="icon-like" alt="item icon" />
+                                    </div>
+                                    <div class="item rounded-icon small mx-1">
+                                        <img data-type="dislike" src="./resources/images/icon/icon-dislike.svg" class="icon-dislike" alt="item icon" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -332,6 +336,9 @@
         <script src="./resources/vendors/jquery/jquery.min.js"></script>
         <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+        <!-- Main JS -->
+        <script src="./resources/js/main.js"></script>
+
         <script>
             $(function () {
                 $(".button-nav").click(function () {
@@ -341,19 +348,8 @@
 
                     const modal = $("#faq-modal");
                     modal.find(".main-content .title").html(title);
-                    modal.find(".main-content .rounded-icon img").attr("src", imgSrc);
+                    modal.find(".main-content .main-icon img").attr("src", imgSrc);
                     modal.modal("show");
-                });
-
-                let dislike = "./resources/images/icon/icon-dislike.svg";
-                let dislikeActive = "./resources/images/icon/icon-dislike-active.svg";
-                let like = "./resources/images/icon/icon-like.svg";
-                let likeActive = "./resources/images/icon/icon-like-active.svg";
-
-                $(".reaction img").click(function () {
-                    $(".reaction img.icon-dislike").attr("src", dislike);
-                    $(".reaction img.icon-like").attr("src", like);
-                    $(this).attr("src", $(this).data("type") === "like" ? likeActive : dislikeActive);
                 });
             });
         </script>

@@ -15,6 +15,11 @@
 .layout-content .houses {
   margin-top: 100px;
 }
+@media (max-width: 767.98px) {
+  .layout-content .houses {
+    margin-top: 50px;
+  }
+}
 .layout-content .houses .item {
   margin-top: 25px;
   margin-left: 20px;

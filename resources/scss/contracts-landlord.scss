@@ -23,6 +23,10 @@
 
     & > div {
       margin-top: 80px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 50px;
+      }
     }
 
     .item {
@@ -31,6 +35,10 @@
       padding-bottom: 20px;
       border: 1px solid transparent;
       cursor: pointer;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 30px;
+      }
 
       &.active {
         border: 1px solid $color-primary;
@@ -49,6 +57,10 @@
         top: -50px;
         left: 0;
         right: 0;
+
+        @include media-breakpoint-down(sm) {
+          top: -30px;
+        }
       }
 
       .selector {

@@ -150,22 +150,3 @@
   left: 0;
   background-color: #d3eaff;
 }
-.layout-content .list-carousel .item .wrapper .reaction {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 30px;
-}
-.layout-content .list-carousel .item .wrapper .reaction .item {
-  cursor: pointer;
-}
-.layout-content .list-carousel .item .wrapper .reaction img {
-  margin: 0 10px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-.layout-content .list-carousel .item .wrapper .reaction img.icon-dislike {
-  margin-top: 5px;
-}

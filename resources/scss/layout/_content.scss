@@ -26,8 +26,9 @@
 
   .main-subtitle {
     @include clear-spacing;
-    @include font(18px, $fw-light);
+    @include font(20px, $fw-light);
     text-align: center;
+    line-height: 28px;
 
     @include media-breakpoint-down(xs) {
       font-size: 16px;

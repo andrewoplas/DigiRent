@@ -1,35 +1,5 @@
-// $(function() {
-//     // Initialize navbar sticky
-//     const sticky = xs ? 30 : 117;
-//     const onScroll = function() {
-//         if (window.pageYOffset >= sticky) {
-//             $("#sticky-navbar").addClass("active");
-//         } else {
-//             $("#sticky-navbar").removeClass("active");
-//         }
-//     };
-//     window.onscroll = onScroll;
-//     onScroll();
-
-//     // Initialize menu toggle
-//     $(".menu-toggle").click(function() {
-//         $(".menu-xs").toggleClass("active");
-//     });
-
-//     // Change collapse icon
-//     $(".collapse").on("show.bs.collapse hide.bs.collapse", function() {
-//         $(this)
-//             .parent()
-//             .find(".header")
-//             .find(".rotate")
-//             .toggleClass("rotate-90");
-//     });
-
-//     // Initialize language selector
-//     $(".ui.dropdown").dropdown();
-// });
-
 $(function () {
+  // Function: Upload
   $(".file-upload [type='file']").bind("change", function () {
     const parent = $(this).parents(".file-upload");
     const filename = $(this).val();
@@ -50,16 +20,30 @@ $(function () {
     }
   });
 
+  // Function: Dropdown
   $(".select .btn-dropdown").click(function () {
     const parent = $(this).parents(".select");
     $(".select").not(parent).removeClass("active");
     parent.toggleClass("active");
   });
 
+  // Function: Select
   $(".select .choices > .item").click(function () {
     $(".select").removeClass("active");
     const parent = $(this).parents(".select");
     const value = $(this).html();
     parent.find(".value").addClass("selected").html(value);
+  });
+
+  // Function: Reaction select
+  let dislike = "./resources/images/icon/icon-dislike.svg";
+  let dislikeActive = "./resources/images/icon/icon-dislike-active.svg";
+  let like = "./resources/images/icon/icon-like.svg";
+  let likeActive = "./resources/images/icon/icon-like-active.svg";
+  $(".reaction .item").click(function () {
+    $(".reaction img.icon-dislike").attr("src", dislike);
+    $(".reaction img.icon-like").attr("src", like);
+    let img = $(this).find("img");
+    img.attr("src", img.data("type") == "like" ? likeActive : dislikeActive);
   });
 });

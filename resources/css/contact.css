@@ -24,6 +24,11 @@
 .layout-content .contacts {
   margin-top: 100px;
 }
+@media (max-width: 767.98px) {
+  .layout-content .contacts {
+    margin-top: 50px;
+  }
+}
 .layout-content .contacts .item .footer {
   display: flex;
   align-items: center;

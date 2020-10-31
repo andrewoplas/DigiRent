@@ -119,22 +119,3 @@
     margin-left: 15px;
   }
 }
-#faq-modal .modal-body .reaction {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 40px;
-}
-#faq-modal .modal-body .reaction .item {
-  cursor: pointer;
-}
-#faq-modal .modal-body .reaction img {
-  margin: 0 10px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-#faq-modal .modal-body .reaction img.icon-dislike {
-  margin-top: 5px;
-}

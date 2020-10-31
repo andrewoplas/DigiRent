@@ -1,0 +1,27 @@
+.layout-content {
+  padding-top: 7px;
+  padding-bottom: 400px;
+}
+@media (max-width: 1199.98px) {
+  .layout-content {
+    padding-bottom: 250px;
+  }
+}
+@media (max-width: 767.98px) {
+  .layout-content {
+    padding-bottom: 150px;
+  }
+}
+.layout-content .main-subtitle {
+  max-width: 860px;
+  font-size: 22px !important;
+}
+.layout-content .medias .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.layout-content .medias .item .thumbnail {
+  height: 450px;
+}
