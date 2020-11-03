@@ -58,6 +58,10 @@
     top: 56px;
     left: 20px;
     z-index: 999;
+
+    .icon-link {
+      @include simple-shadow;
+    }
   }
 
   .list-carousel {
