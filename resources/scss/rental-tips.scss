@@ -53,16 +53,19 @@
     }
   }
 
+  .social-medias-wrapper {
+    position: absolute;
+    top: 56px;
+    left: 20px;
+    z-index: 999;
+  }
+
   .list-carousel {
-    margin-top: 150px;
+    margin-top: 30px;
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
     @include flex(center, center);
-
-    @include media-breakpoint-down(md) {
-      margin-top: 50px;
-    }
 
     .slick-list {
       margin-left: 40px;
@@ -130,13 +133,6 @@
         @include media-breakpoint-down(xs) {
           padding-left: 25px;
           padding-right: 25px;
-        }
-
-        .share-icon {
-          width: 25px;
-          position: absolute;
-          top: 15px;
-          left: 15px;
         }
 
         .top-background {

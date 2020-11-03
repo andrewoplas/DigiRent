@@ -1189,3 +1189,68 @@ textarea::placeholder {
 .reaction .item img.icon-dislike {
   margin-top: 5px;
 }
+
+.social-medias-wrapper {
+  position: relative;
+}
+.social-medias-wrapper .active-icon {
+  display: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #7f7f7f;
+}
+.social-medias-wrapper.active .active-icon {
+  display: block;
+}
+.social-medias-wrapper.active .inactive-icon {
+  display: none;
+}
+.social-medias-wrapper.active .social-medias {
+  display: block;
+}
+.social-medias-wrapper .icon-share {
+  cursor: pointer;
+}
+.social-medias-wrapper .social-medias {
+  display: none;
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  left: 65px;
+  z-index: 100;
+}
+.social-medias-wrapper .social-medias .icons {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-direction: row;
+  background-color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 20px 15px;
+}
+.social-medias-wrapper .social-medias .icons .icon {
+  height: 40px;
+  width: 40px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+@media (max-width: 575.98px) {
+  .social-medias-wrapper .social-medias {
+    top: -3px;
+    left: 53px;
+  }
+  .social-medias-wrapper .social-medias .icons {
+    padding: 10px;
+  }
+  .social-medias-wrapper .social-medias .icons .icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}

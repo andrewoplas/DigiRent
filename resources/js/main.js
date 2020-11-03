@@ -48,4 +48,9 @@ $(function () {
     let img = $(this).find("img");
     img.attr("src", img.data("type") == "like" ? likeActive : dislikeActive);
   });
+
+  // Function: Open social medias
+  $(".social-medias-wrapper .icon-share").click(function () {
+    $(this).parents(".social-medias-wrapper").toggleClass("active");
+  });
 });

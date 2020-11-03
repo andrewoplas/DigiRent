@@ -53,6 +53,14 @@
         &.text-keys {
           flex-basis: 55%;
           flex-wrap: wrap;
+
+          .subtitle {
+            @include font(12px, $fw-light);
+            color: #adadad;
+            flex-basis: 100%;
+            text-align: center;
+            margin-top: 5px;
+          }
         }
 
         @include media-breakpoint-down(md) {
@@ -102,6 +110,10 @@
 
           .button-wrapper {
             @include flex(center, center);
+
+            button {
+              font-size: 12px !important;
+            }
           }
         }
 

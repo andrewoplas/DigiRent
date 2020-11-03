@@ -60,6 +60,16 @@
   flex-basis: 55%;
   flex-wrap: wrap;
 }
+.layout-content .payments .header p.text-keys .subtitle {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  color: #adadad;
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
 @media (max-width: 991.98px) {
   .layout-content .payments .header p.text-escrow {
     flex-basis: 25%;
@@ -113,6 +123,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+.layout-content .payments .item > *.paid .button-wrapper button {
+  font-size: 12px !important;
 }
 .layout-content .payments .item > *.keys {
   flex-basis: 55%;
